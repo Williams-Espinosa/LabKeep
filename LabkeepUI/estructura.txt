@@ -1,0 +1,2547 @@
+.
+├── app
+│   ├── build
+│   │   ├── generated
+│   │   │   ├── res
+│   │   │   │   └── pngs
+│   │   │   │       └── debug
+│   │   │   └── updated_navigation_xml
+│   │   │       ├── debug
+│   │   │       └── debugAndroidTest
+│   │   ├── intermediates
+│   │   │   ├── aar_metadata_check
+│   │   │   │   ├── debug
+│   │   │   │   │   └── checkDebugAarMetadata
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── checkDebugAndroidTestAarMetadata
+│   │   │   ├── android_res_source_set_path_map
+│   │   │   │   ├── debug
+│   │   │   │   │   └── mapDebugSourceSetPaths
+│   │   │   │   │       └── file-map.txt
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── mapDebugAndroidTestSourceSetPaths
+│   │   │   │           └── file-map.txt
+│   │   │   ├── annotation_processor_list
+│   │   │   │   ├── debug
+│   │   │   │   │   └── javaPreCompileDebug
+│   │   │   │   │       └── annotationProcessors.json
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── javaPreCompileDebugAndroidTest
+│   │   │   │           └── annotationProcessors.json
+│   │   │   ├── apk
+│   │   │   │   ├── androidTest
+│   │   │   │   │   └── debug
+│   │   │   │   │       ├── app-debug-androidTest.apk
+│   │   │   │   │       └── output-metadata.json
+│   │   │   │   └── debug
+│   │   │   │       ├── app-debug.apk
+│   │   │   │       └── output-metadata.json
+│   │   │   ├── apk_ide_redirect_file
+│   │   │   │   ├── debug
+│   │   │   │   │   └── createDebugApkListingFileRedirect
+│   │   │   │   │       └── redirect.txt
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── createDebugAndroidTestApkListingFileRedirect
+│   │   │   │           └── redirect.txt
+│   │   │   ├── app_metadata
+│   │   │   │   └── debug
+│   │   │   │       └── writeDebugAppMetadata
+│   │   │   │           └── app-metadata.properties
+│   │   │   ├── assets
+│   │   │   │   ├── debug
+│   │   │   │   │   └── mergeDebugAssets
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── mergeDebugAndroidTestAssets
+│   │   │   ├── built_in_kotlinc
+│   │   │   │   ├── debug
+│   │   │   │   │   └── compileDebugKotlin
+│   │   │   │   │       └── classes
+│   │   │   │   │           ├── com
+│   │   │   │   │           │   └── williamsel
+│   │   │   │   │           │       └── labkeep
+│   │   │   │   │           │           ├── core
+│   │   │   │   │           │           │   └── network
+│   │   │   │   │           │           │       └── RetrofitClient.class
+│   │   │   │   │           │           ├── features
+│   │   │   │   │           │           │   ├── descripciondispositivo
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   │   └── JsonPlaceHolderDescripcionDispositivoApi.class
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   │       └── DescripcionDispositivoDto.class
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   │       └── DescripcionDispositivoImpl.class
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   │   └── DescripcionDispositivoProvider.class
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   │   └── DescripcionDispositivo.class
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   │   └── DescripcionDispositivoRepository.class
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   │       └── GetIdDescripcionDispositivoUseCase.class
+│   │   │   │   │           │           │   │   └── presentacion
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       │   └── DescripcionDispositivoUIState.class
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   │           ├── DescripcionDispositivoViewModel.class
+│   │   │   │   │           │           │   │           └── DescripcionDispositivoViewModelFactory.class
+│   │   │   │   │           │           │   ├── editardispositivo
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   │   └── JsonPlaceHolderEditarDispositivoApi.class
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   │       └── EditarDispositivoDto.class
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   │       └── EditarDispositivoImpl.class
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   │   └── EditarDispositivoProvider.class
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   │   └── EditarDispositivo.class
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   │   └── EditarDisposivoRepository.class
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   │       └── PutEditarDispositivoUseCase.class
+│   │   │   │   │           │           │   │   └── presentacion
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       │   └── EditarDispositivoUIState.class
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   │           ├── EditarDispositivoViewModel.class
+│   │   │   │   │           │           │   │           └── EditarDispositivoViewModelFactory.class
+│   │   │   │   │           │           │   ├── eliminardispositivo
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   │   └── JsonPlaceHolderEliminarDispositivoApi.class
+│   │   │   │   │           │           │   │   │   │   ├── mapper
+│   │   │   │   │           │           │   │   │   │   │   └── EliminarDispositivoMapper.class
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   │       └── EliminarDispositivoDto.class
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   │       └── EliminarDispositivoRepositoryImpl.class
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   │   └── EliminarDispositivoProvider.class
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   │   └── EliminarDispositivo.class
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   │   └── EliminarDispositivoRepository.class
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   │       └── DeleteEliminarDispositivoUseCase.class
+│   │   │   │   │           │           │   │   └── presentacion
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       │   └── EliminarDispositivoUIState.class
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   │           ├── EliminarDispositivoViewModel.class
+│   │   │   │   │           │           │   │           └── EliminarDispositivoViewModelFactory.class
+│   │   │   │   │           │           │   ├── inventario
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   │   └── JsonPlaceHolderInventarioApi.class
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   │       └── InventarioDto.class
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   │       └── InventarioRepositoryImpl.class
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   │   └── InventarioProvider.class
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   │   └── Inventario.class
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   │   └── InventarioRepository.class
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   │       └── GetInventarioUseCase.class
+│   │   │   │   │           │           │   │   └── presentacion
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       │   └── InventarioUIState.class
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   │           ├── InventarioViewModel.class
+│   │   │   │   │           │           │   │           └── InventarioViewModelFactory.class
+│   │   │   │   │           │           │   ├── login
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   │   └── JsonPlaceHolderLoginApi.class
+│   │   │   │   │           │           │   │   │   │   ├── mapper
+│   │   │   │   │           │           │   │   │   │   │   └── LoginMapperKt.class
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   │       └── LoginDto.class
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   │       ├── LoginRepositoryImpl$login$1.class
+│   │   │   │   │           │           │   │   │       └── LoginRepositoryImpl.class
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   │   └── LoginProvider.class
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   │   └── Login.class
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   │   └── LoginRepository.class
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   │       └── PostLoginUseCase.class
+│   │   │   │   │           │           │   │   └── presentation
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       │   ├── ComposableSingletons$LoginSceenKt.class
+│   │   │   │   │           │           │   │       │   ├── LoginSceenKt.class
+│   │   │   │   │           │           │   │       │   └── LoginUIState.class
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   │           ├── LoginViewModel$login$1.class
+│   │   │   │   │           │           │   │           ├── LoginViewModel.class
+│   │   │   │   │           │           │   │           └── LoginViewModelFactory.class
+│   │   │   │   │           │           │   └── nuevodispositivo
+│   │   │   │   │           │           │       ├── data
+│   │   │   │   │           │           │       │   ├── datasource
+│   │   │   │   │           │           │       │   │   ├── api
+│   │   │   │   │           │           │       │   │   │   └── JsonPlaceHolderNuevoDispositivoApi.class
+│   │   │   │   │           │           │       │   │   └── models
+│   │   │   │   │           │           │       │   │       └── NuevoDispositivoDto.class
+│   │   │   │   │           │           │       │   └── repositories
+│   │   │   │   │           │           │       │       └── NuevoDispositivoRepositoryImpl.class
+│   │   │   │   │           │           │       ├── di
+│   │   │   │   │           │           │       │   └── NuevoDispositivoProvider.class
+│   │   │   │   │           │           │       ├── domain
+│   │   │   │   │           │           │       │   ├── entities
+│   │   │   │   │           │           │       │   │   └── NuevoDispositivo.class
+│   │   │   │   │           │           │       │   ├── repositories
+│   │   │   │   │           │           │       │   │   └── NuevoDispositivoRepository.class
+│   │   │   │   │           │           │       │   └── usescases
+│   │   │   │   │           │           │       │       └── PostNuevoDispositivoUseCase.class
+│   │   │   │   │           │           │       └── presentacion
+│   │   │   │   │           │           │           ├── screens
+│   │   │   │   │           │           │           │   └── NuevoDispositivoUIState.class
+│   │   │   │   │           │           │           └── viewmodels
+│   │   │   │   │           │           │               ├── NuevoDispositivoViewModel.class
+│   │   │   │   │           │           │               └── NuevoDispositivoViewModelFactory.class
+│   │   │   │   │           │           ├── feautures
+│   │   │   │   │           │           │   ├── descripciondispositivo
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   └── presentacion
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   ├── editardispositivo
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   └── presentacion
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   ├── eliminardispositivo
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   ├── mapper
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   └── presentacion
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   ├── inventario
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   └── presentacion
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   ├── login
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   └── datasource
+│   │   │   │   │           │           │   │   │       ├── api
+│   │   │   │   │           │           │   │   │       ├── mapper
+│   │   │   │   │           │           │   │   │       └── models
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   └── presentation
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   └── nuevodispositivo
+│   │   │   │   │           │           │       ├── data
+│   │   │   │   │           │           │       │   ├── datasource
+│   │   │   │   │           │           │       │   │   ├── api
+│   │   │   │   │           │           │       │   │   └── models
+│   │   │   │   │           │           │       │   └── repositories
+│   │   │   │   │           │           │       ├── di
+│   │   │   │   │           │           │       ├── domain
+│   │   │   │   │           │           │       │   ├── entities
+│   │   │   │   │           │           │       │   ├── repositories
+│   │   │   │   │           │           │       │   └── usescases
+│   │   │   │   │           │           │       └── presentacion
+│   │   │   │   │           │           │           ├── screens
+│   │   │   │   │           │           │           └── viewmodels
+│   │   │   │   │           │           ├── MainActivity.class
+│   │   │   │   │           │           └── ui
+│   │   │   │   │           │               └── theme
+│   │   │   │   │           │                   ├── ColorKt.class
+│   │   │   │   │           │                   ├── ThemeKt.class
+│   │   │   │   │           │                   └── TypeKt.class
+│   │   │   │   │           └── META-INF
+│   │   │   │   │               └── app.kotlin_module
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── compileDebugAndroidTestKotlin
+│   │   │   │           └── classes
+│   │   │   │               ├── com
+│   │   │   │               │   └── williamsel
+│   │   │   │               │       └── labkeep
+│   │   │   │               │           └── ExampleInstrumentedTest.class
+│   │   │   │               └── META-INF
+│   │   │   │                   └── app.kotlin_module
+│   │   │   ├── compatible_screen_manifest
+│   │   │   │   └── debug
+│   │   │   │       └── createDebugCompatibleScreenManifests
+│   │   │   │           └── output-metadata.json
+│   │   │   ├── compile_and_runtime_r_class_jar
+│   │   │   │   ├── debug
+│   │   │   │   │   └── processDebugResources
+│   │   │   │   │       └── R.jar
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── processDebugAndroidTestResources
+│   │   │   │           └── R.jar
+│   │   │   ├── compile_app_classes_jar
+│   │   │   │   └── debug
+│   │   │   │       └── bundleDebugClassesToCompileJar
+│   │   │   │           └── classes.jar
+│   │   │   ├── compiled_navigation_res
+│   │   │   │   ├── debug
+│   │   │   │   │   └── compileDebugNavigationResources
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── compileDebugAndroidTestNavigationResources
+│   │   │   ├── compile_r_class_jar
+│   │   │   │   ├── debug
+│   │   │   │   │   └── generateDebugRFile
+│   │   │   │   │       └── R.jar
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── generateDebugAndroidTestRFile
+│   │   │   │           └── R.jar
+│   │   │   ├── compile_symbol_list
+│   │   │   │   ├── debug
+│   │   │   │   │   └── generateDebugRFile
+│   │   │   │   │       └── R.txt
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── generateDebugAndroidTestRFile
+│   │   │   │           └── R.txt
+│   │   │   ├── compressed_assets
+│   │   │   │   ├── debug
+│   │   │   │   │   └── compressDebugAssets
+│   │   │   │   │       └── out
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── compressDebugAndroidTestAssets
+│   │   │   │           └── out
+│   │   │   ├── data_binding_layout_info_type_merge
+│   │   │   │   ├── debug
+│   │   │   │   │   └── mergeDebugResources
+│   │   │   │   │       └── out
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── mergeDebugAndroidTestResources
+│   │   │   │           └── out
+│   │   │   ├── data_binding_layout_info_type_package
+│   │   │   │   ├── debug
+│   │   │   │   │   └── packageDebugResources
+│   │   │   │   │       └── out
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── packageDebugAndroidTestResources
+│   │   │   │           └── out
+│   │   │   ├── desugar_graph
+│   │   │   │   ├── debug
+│   │   │   │   │   └── dexBuilderDebug
+│   │   │   │   │       └── out
+│   │   │   │   │           ├── currentProject
+│   │   │   │   │           │   ├── dirs_bucket_0
+│   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │           │   ├── dirs_bucket_1
+│   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │           │   ├── dirs_bucket_2
+│   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │           │   ├── dirs_bucket_3
+│   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │           │   ├── dirs_bucket_4
+│   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │           │   ├── dirs_bucket_5
+│   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │           │   ├── dirs_bucket_6
+│   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │           │   ├── dirs_bucket_7
+│   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │           │   ├── jar_c07149bef494b6b055dbb0017530829f1054f3e3020a720dc1ad393a6cb7b5b2_bucket_0
+│   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │           │   ├── jar_c07149bef494b6b055dbb0017530829f1054f3e3020a720dc1ad393a6cb7b5b2_bucket_1
+│   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │           │   ├── jar_c07149bef494b6b055dbb0017530829f1054f3e3020a720dc1ad393a6cb7b5b2_bucket_2
+│   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │           │   ├── jar_c07149bef494b6b055dbb0017530829f1054f3e3020a720dc1ad393a6cb7b5b2_bucket_3
+│   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │           │   ├── jar_c07149bef494b6b055dbb0017530829f1054f3e3020a720dc1ad393a6cb7b5b2_bucket_4
+│   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │           │   ├── jar_c07149bef494b6b055dbb0017530829f1054f3e3020a720dc1ad393a6cb7b5b2_bucket_5
+│   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │           │   ├── jar_c07149bef494b6b055dbb0017530829f1054f3e3020a720dc1ad393a6cb7b5b2_bucket_6
+│   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │           │   └── jar_c07149bef494b6b055dbb0017530829f1054f3e3020a720dc1ad393a6cb7b5b2_bucket_7
+│   │   │   │   │           │       └── graph.bin
+│   │   │   │   │           ├── externalLibs
+│   │   │   │   │           ├── mixedScopes
+│   │   │   │   │           └── otherProjects
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── dexBuilderDebugAndroidTest
+│   │   │   │           └── out
+│   │   │   │               ├── currentProject
+│   │   │   │               │   ├── dirs_bucket_0
+│   │   │   │               │   │   └── graph.bin
+│   │   │   │               │   ├── dirs_bucket_1
+│   │   │   │               │   │   └── graph.bin
+│   │   │   │               │   ├── dirs_bucket_2
+│   │   │   │               │   │   └── graph.bin
+│   │   │   │               │   ├── dirs_bucket_3
+│   │   │   │               │   │   └── graph.bin
+│   │   │   │               │   ├── dirs_bucket_4
+│   │   │   │               │   │   └── graph.bin
+│   │   │   │               │   ├── dirs_bucket_5
+│   │   │   │               │   │   └── graph.bin
+│   │   │   │               │   ├── dirs_bucket_6
+│   │   │   │               │   │   └── graph.bin
+│   │   │   │               │   ├── dirs_bucket_7
+│   │   │   │               │   │   └── graph.bin
+│   │   │   │               │   ├── jar_e4b025d978f87c00a174416021024995456789b1b54cccc59b77d77dee4c07b3_bucket_0
+│   │   │   │               │   │   └── graph.bin
+│   │   │   │               │   ├── jar_e4b025d978f87c00a174416021024995456789b1b54cccc59b77d77dee4c07b3_bucket_1
+│   │   │   │               │   │   └── graph.bin
+│   │   │   │               │   ├── jar_e4b025d978f87c00a174416021024995456789b1b54cccc59b77d77dee4c07b3_bucket_2
+│   │   │   │               │   │   └── graph.bin
+│   │   │   │               │   ├── jar_e4b025d978f87c00a174416021024995456789b1b54cccc59b77d77dee4c07b3_bucket_3
+│   │   │   │               │   │   └── graph.bin
+│   │   │   │               │   ├── jar_e4b025d978f87c00a174416021024995456789b1b54cccc59b77d77dee4c07b3_bucket_4
+│   │   │   │               │   │   └── graph.bin
+│   │   │   │               │   ├── jar_e4b025d978f87c00a174416021024995456789b1b54cccc59b77d77dee4c07b3_bucket_5
+│   │   │   │               │   │   └── graph.bin
+│   │   │   │               │   ├── jar_e4b025d978f87c00a174416021024995456789b1b54cccc59b77d77dee4c07b3_bucket_6
+│   │   │   │               │   │   └── graph.bin
+│   │   │   │               │   └── jar_e4b025d978f87c00a174416021024995456789b1b54cccc59b77d77dee4c07b3_bucket_7
+│   │   │   │               │       └── graph.bin
+│   │   │   │               ├── externalLibs
+│   │   │   │               ├── mixedScopes
+│   │   │   │               └── otherProjects
+│   │   │   ├── dex
+│   │   │   │   ├── debug
+│   │   │   │   │   ├── mergeExtDexDebug
+│   │   │   │   │   │   ├── classes2.dex
+│   │   │   │   │   │   └── classes.dex
+│   │   │   │   │   ├── mergeLibDexDebug
+│   │   │   │   │   │   ├── 0
+│   │   │   │   │   │   ├── 1
+│   │   │   │   │   │   ├── 10
+│   │   │   │   │   │   ├── 11
+│   │   │   │   │   │   ├── 12
+│   │   │   │   │   │   ├── 13
+│   │   │   │   │   │   ├── 14
+│   │   │   │   │   │   ├── 15
+│   │   │   │   │   │   ├── 2
+│   │   │   │   │   │   ├── 3
+│   │   │   │   │   │   ├── 4
+│   │   │   │   │   │   ├── 5
+│   │   │   │   │   │   ├── 6
+│   │   │   │   │   │   ├── 7
+│   │   │   │   │   │   ├── 8
+│   │   │   │   │   │   └── 9
+│   │   │   │   │   └── mergeProjectDexDebug
+│   │   │   │   │       ├── 0
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── 1
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── 10
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── 11
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── 12
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── 13
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── 14
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── 15
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── 2
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── 3
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── 4
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── 5
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── 6
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── 7
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── 8
+│   │   │   │   │       └── 9
+│   │   │   │   │           └── classes.dex
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       ├── mergeExtDexDebugAndroidTest
+│   │   │   │       │   └── classes.dex
+│   │   │   │       ├── mergeLibDexDebugAndroidTest
+│   │   │   │       │   ├── 0
+│   │   │   │       │   ├── 1
+│   │   │   │       │   ├── 10
+│   │   │   │       │   ├── 11
+│   │   │   │       │   ├── 12
+│   │   │   │       │   ├── 13
+│   │   │   │       │   ├── 14
+│   │   │   │       │   ├── 15
+│   │   │   │       │   ├── 2
+│   │   │   │       │   ├── 3
+│   │   │   │       │   ├── 4
+│   │   │   │       │   ├── 5
+│   │   │   │       │   ├── 6
+│   │   │   │       │   ├── 7
+│   │   │   │       │   ├── 8
+│   │   │   │       │   └── 9
+│   │   │   │       └── mergeProjectDexDebugAndroidTest
+│   │   │   │           ├── 0
+│   │   │   │           │   └── classes.dex
+│   │   │   │           ├── 1
+│   │   │   │           ├── 10
+│   │   │   │           ├── 11
+│   │   │   │           ├── 12
+│   │   │   │           ├── 13
+│   │   │   │           │   └── classes.dex
+│   │   │   │           ├── 14
+│   │   │   │           ├── 15
+│   │   │   │           ├── 2
+│   │   │   │           ├── 3
+│   │   │   │           ├── 4
+│   │   │   │           ├── 5
+│   │   │   │           ├── 6
+│   │   │   │           ├── 7
+│   │   │   │           ├── 8
+│   │   │   │           └── 9
+│   │   │   ├── dex_archive_input_jar_hashes
+│   │   │   │   ├── debug
+│   │   │   │   │   └── dexBuilderDebug
+│   │   │   │   │       └── out
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── dexBuilderDebugAndroidTest
+│   │   │   │           └── out
+│   │   │   ├── dex_number_of_buckets_file
+│   │   │   │   ├── debug
+│   │   │   │   │   └── dexBuilderDebug
+│   │   │   │   │       └── out
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── dexBuilderDebugAndroidTest
+│   │   │   │           └── out
+│   │   │   ├── duplicate_classes_check
+│   │   │   │   ├── debug
+│   │   │   │   │   └── checkDebugDuplicateClasses
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── checkDebugAndroidTestDuplicateClasses
+│   │   │   ├── external_file_lib_dex_archives
+│   │   │   │   ├── debug
+│   │   │   │   │   └── desugarDebugFileDependencies
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── desugarDebugAndroidTestFileDependencies
+│   │   │   ├── external_libs_dex_archive
+│   │   │   │   ├── debug
+│   │   │   │   │   └── dexBuilderDebug
+│   │   │   │   │       └── out
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── dexBuilderDebugAndroidTest
+│   │   │   │           └── out
+│   │   │   ├── external_libs_dex_archive_with_artifact_transforms
+│   │   │   │   ├── debug
+│   │   │   │   │   └── dexBuilderDebug
+│   │   │   │   │       └── out
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── dexBuilderDebugAndroidTest
+│   │   │   │           └── out
+│   │   │   ├── incremental
+│   │   │   │   ├── debug
+│   │   │   │   │   ├── mergeDebugResources
+│   │   │   │   │   │   ├── compile-file-map.properties
+│   │   │   │   │   │   ├── merged.dir
+│   │   │   │   │   │   │   ├── values
+│   │   │   │   │   │   │   │   └── values.xml
+│   │   │   │   │   │   │   ├── values-af
+│   │   │   │   │   │   │   │   └── values-af.xml
+│   │   │   │   │   │   │   ├── values-am
+│   │   │   │   │   │   │   │   └── values-am.xml
+│   │   │   │   │   │   │   ├── values-ar
+│   │   │   │   │   │   │   │   └── values-ar.xml
+│   │   │   │   │   │   │   ├── values-as
+│   │   │   │   │   │   │   │   └── values-as.xml
+│   │   │   │   │   │   │   ├── values-az
+│   │   │   │   │   │   │   │   └── values-az.xml
+│   │   │   │   │   │   │   ├── values-be
+│   │   │   │   │   │   │   │   └── values-be.xml
+│   │   │   │   │   │   │   ├── values-bg
+│   │   │   │   │   │   │   │   └── values-bg.xml
+│   │   │   │   │   │   │   ├── values-bn
+│   │   │   │   │   │   │   │   └── values-bn.xml
+│   │   │   │   │   │   │   ├── values-bs
+│   │   │   │   │   │   │   │   └── values-bs.xml
+│   │   │   │   │   │   │   ├── values-b+sr+Latn
+│   │   │   │   │   │   │   │   └── values-b+sr+Latn.xml
+│   │   │   │   │   │   │   ├── values-ca
+│   │   │   │   │   │   │   │   └── values-ca.xml
+│   │   │   │   │   │   │   ├── values-cs
+│   │   │   │   │   │   │   │   └── values-cs.xml
+│   │   │   │   │   │   │   ├── values-da
+│   │   │   │   │   │   │   │   └── values-da.xml
+│   │   │   │   │   │   │   ├── values-de
+│   │   │   │   │   │   │   │   └── values-de.xml
+│   │   │   │   │   │   │   ├── values-el
+│   │   │   │   │   │   │   │   └── values-el.xml
+│   │   │   │   │   │   │   ├── values-en-rAU
+│   │   │   │   │   │   │   │   └── values-en-rAU.xml
+│   │   │   │   │   │   │   ├── values-en-rCA
+│   │   │   │   │   │   │   │   └── values-en-rCA.xml
+│   │   │   │   │   │   │   ├── values-en-rGB
+│   │   │   │   │   │   │   │   └── values-en-rGB.xml
+│   │   │   │   │   │   │   ├── values-en-rIN
+│   │   │   │   │   │   │   │   └── values-en-rIN.xml
+│   │   │   │   │   │   │   ├── values-en-rXC
+│   │   │   │   │   │   │   │   └── values-en-rXC.xml
+│   │   │   │   │   │   │   ├── values-es
+│   │   │   │   │   │   │   │   └── values-es.xml
+│   │   │   │   │   │   │   ├── values-es-rUS
+│   │   │   │   │   │   │   │   └── values-es-rUS.xml
+│   │   │   │   │   │   │   ├── values-et
+│   │   │   │   │   │   │   │   └── values-et.xml
+│   │   │   │   │   │   │   ├── values-eu
+│   │   │   │   │   │   │   │   └── values-eu.xml
+│   │   │   │   │   │   │   ├── values-fa
+│   │   │   │   │   │   │   │   └── values-fa.xml
+│   │   │   │   │   │   │   ├── values-fi
+│   │   │   │   │   │   │   │   └── values-fi.xml
+│   │   │   │   │   │   │   ├── values-fr
+│   │   │   │   │   │   │   │   └── values-fr.xml
+│   │   │   │   │   │   │   ├── values-fr-rCA
+│   │   │   │   │   │   │   │   └── values-fr-rCA.xml
+│   │   │   │   │   │   │   ├── values-gl
+│   │   │   │   │   │   │   │   └── values-gl.xml
+│   │   │   │   │   │   │   ├── values-gu
+│   │   │   │   │   │   │   │   └── values-gu.xml
+│   │   │   │   │   │   │   ├── values-hi
+│   │   │   │   │   │   │   │   └── values-hi.xml
+│   │   │   │   │   │   │   ├── values-hr
+│   │   │   │   │   │   │   │   └── values-hr.xml
+│   │   │   │   │   │   │   ├── values-hu
+│   │   │   │   │   │   │   │   └── values-hu.xml
+│   │   │   │   │   │   │   ├── values-hy
+│   │   │   │   │   │   │   │   └── values-hy.xml
+│   │   │   │   │   │   │   ├── values-in
+│   │   │   │   │   │   │   │   └── values-in.xml
+│   │   │   │   │   │   │   ├── values-is
+│   │   │   │   │   │   │   │   └── values-is.xml
+│   │   │   │   │   │   │   ├── values-it
+│   │   │   │   │   │   │   │   └── values-it.xml
+│   │   │   │   │   │   │   ├── values-iw
+│   │   │   │   │   │   │   │   └── values-iw.xml
+│   │   │   │   │   │   │   ├── values-ja
+│   │   │   │   │   │   │   │   └── values-ja.xml
+│   │   │   │   │   │   │   ├── values-ka
+│   │   │   │   │   │   │   │   └── values-ka.xml
+│   │   │   │   │   │   │   ├── values-kk
+│   │   │   │   │   │   │   │   └── values-kk.xml
+│   │   │   │   │   │   │   ├── values-km
+│   │   │   │   │   │   │   │   └── values-km.xml
+│   │   │   │   │   │   │   ├── values-kn
+│   │   │   │   │   │   │   │   └── values-kn.xml
+│   │   │   │   │   │   │   ├── values-ko
+│   │   │   │   │   │   │   │   └── values-ko.xml
+│   │   │   │   │   │   │   ├── values-ky
+│   │   │   │   │   │   │   │   └── values-ky.xml
+│   │   │   │   │   │   │   ├── values-lo
+│   │   │   │   │   │   │   │   └── values-lo.xml
+│   │   │   │   │   │   │   ├── values-lt
+│   │   │   │   │   │   │   │   └── values-lt.xml
+│   │   │   │   │   │   │   ├── values-lv
+│   │   │   │   │   │   │   │   └── values-lv.xml
+│   │   │   │   │   │   │   ├── values-mk
+│   │   │   │   │   │   │   │   └── values-mk.xml
+│   │   │   │   │   │   │   ├── values-ml
+│   │   │   │   │   │   │   │   └── values-ml.xml
+│   │   │   │   │   │   │   ├── values-mn
+│   │   │   │   │   │   │   │   └── values-mn.xml
+│   │   │   │   │   │   │   ├── values-mr
+│   │   │   │   │   │   │   │   └── values-mr.xml
+│   │   │   │   │   │   │   ├── values-ms
+│   │   │   │   │   │   │   │   └── values-ms.xml
+│   │   │   │   │   │   │   ├── values-my
+│   │   │   │   │   │   │   │   └── values-my.xml
+│   │   │   │   │   │   │   ├── values-nb
+│   │   │   │   │   │   │   │   └── values-nb.xml
+│   │   │   │   │   │   │   ├── values-ne
+│   │   │   │   │   │   │   │   └── values-ne.xml
+│   │   │   │   │   │   │   ├── values-nl
+│   │   │   │   │   │   │   │   └── values-nl.xml
+│   │   │   │   │   │   │   ├── values-or
+│   │   │   │   │   │   │   │   └── values-or.xml
+│   │   │   │   │   │   │   ├── values-pa
+│   │   │   │   │   │   │   │   └── values-pa.xml
+│   │   │   │   │   │   │   ├── values-pl
+│   │   │   │   │   │   │   │   └── values-pl.xml
+│   │   │   │   │   │   │   ├── values-pt
+│   │   │   │   │   │   │   │   └── values-pt.xml
+│   │   │   │   │   │   │   ├── values-pt-rBR
+│   │   │   │   │   │   │   │   └── values-pt-rBR.xml
+│   │   │   │   │   │   │   ├── values-pt-rPT
+│   │   │   │   │   │   │   │   └── values-pt-rPT.xml
+│   │   │   │   │   │   │   ├── values-ro
+│   │   │   │   │   │   │   │   └── values-ro.xml
+│   │   │   │   │   │   │   ├── values-ru
+│   │   │   │   │   │   │   │   └── values-ru.xml
+│   │   │   │   │   │   │   ├── values-si
+│   │   │   │   │   │   │   │   └── values-si.xml
+│   │   │   │   │   │   │   ├── values-sk
+│   │   │   │   │   │   │   │   └── values-sk.xml
+│   │   │   │   │   │   │   ├── values-sl
+│   │   │   │   │   │   │   │   └── values-sl.xml
+│   │   │   │   │   │   │   ├── values-sq
+│   │   │   │   │   │   │   │   └── values-sq.xml
+│   │   │   │   │   │   │   ├── values-sr
+│   │   │   │   │   │   │   │   └── values-sr.xml
+│   │   │   │   │   │   │   ├── values-sv
+│   │   │   │   │   │   │   │   └── values-sv.xml
+│   │   │   │   │   │   │   ├── values-sw
+│   │   │   │   │   │   │   │   └── values-sw.xml
+│   │   │   │   │   │   │   ├── values-ta
+│   │   │   │   │   │   │   │   └── values-ta.xml
+│   │   │   │   │   │   │   ├── values-te
+│   │   │   │   │   │   │   │   └── values-te.xml
+│   │   │   │   │   │   │   ├── values-th
+│   │   │   │   │   │   │   │   └── values-th.xml
+│   │   │   │   │   │   │   ├── values-tl
+│   │   │   │   │   │   │   │   └── values-tl.xml
+│   │   │   │   │   │   │   ├── values-tr
+│   │   │   │   │   │   │   │   └── values-tr.xml
+│   │   │   │   │   │   │   ├── values-uk
+│   │   │   │   │   │   │   │   └── values-uk.xml
+│   │   │   │   │   │   │   ├── values-ur
+│   │   │   │   │   │   │   │   └── values-ur.xml
+│   │   │   │   │   │   │   ├── values-uz
+│   │   │   │   │   │   │   │   └── values-uz.xml
+│   │   │   │   │   │   │   ├── values-v21
+│   │   │   │   │   │   │   │   └── values-v21.xml
+│   │   │   │   │   │   │   ├── values-v30
+│   │   │   │   │   │   │   │   └── values-v30.xml
+│   │   │   │   │   │   │   ├── values-vi
+│   │   │   │   │   │   │   │   └── values-vi.xml
+│   │   │   │   │   │   │   ├── values-zh-rCN
+│   │   │   │   │   │   │   │   └── values-zh-rCN.xml
+│   │   │   │   │   │   │   ├── values-zh-rHK
+│   │   │   │   │   │   │   │   └── values-zh-rHK.xml
+│   │   │   │   │   │   │   ├── values-zh-rTW
+│   │   │   │   │   │   │   │   └── values-zh-rTW.xml
+│   │   │   │   │   │   │   └── values-zu
+│   │   │   │   │   │   │       └── values-zu.xml
+│   │   │   │   │   │   ├── merger.xml
+│   │   │   │   │   │   └── stripped.dir
+│   │   │   │   │   └── packageDebugResources
+│   │   │   │   │       ├── compile-file-map.properties
+│   │   │   │   │       ├── merged.dir
+│   │   │   │   │       │   └── values
+│   │   │   │   │       │       └── values.xml
+│   │   │   │   │       ├── merger.xml
+│   │   │   │   │       └── stripped.dir
+│   │   │   │   ├── debugAndroidTest
+│   │   │   │   │   ├── mergeDebugAndroidTestResources
+│   │   │   │   │   │   ├── compile-file-map.properties
+│   │   │   │   │   │   ├── merged.dir
+│   │   │   │   │   │   │   ├── values
+│   │   │   │   │   │   │   │   └── values.xml
+│   │   │   │   │   │   │   ├── values-af
+│   │   │   │   │   │   │   │   └── values-af.xml
+│   │   │   │   │   │   │   ├── values-am
+│   │   │   │   │   │   │   │   └── values-am.xml
+│   │   │   │   │   │   │   ├── values-ar
+│   │   │   │   │   │   │   │   └── values-ar.xml
+│   │   │   │   │   │   │   ├── values-as
+│   │   │   │   │   │   │   │   └── values-as.xml
+│   │   │   │   │   │   │   ├── values-az
+│   │   │   │   │   │   │   │   └── values-az.xml
+│   │   │   │   │   │   │   ├── values-be
+│   │   │   │   │   │   │   │   └── values-be.xml
+│   │   │   │   │   │   │   ├── values-bg
+│   │   │   │   │   │   │   │   └── values-bg.xml
+│   │   │   │   │   │   │   ├── values-bn
+│   │   │   │   │   │   │   │   └── values-bn.xml
+│   │   │   │   │   │   │   ├── values-bs
+│   │   │   │   │   │   │   │   └── values-bs.xml
+│   │   │   │   │   │   │   ├── values-b+sr+Latn
+│   │   │   │   │   │   │   │   └── values-b+sr+Latn.xml
+│   │   │   │   │   │   │   ├── values-ca
+│   │   │   │   │   │   │   │   └── values-ca.xml
+│   │   │   │   │   │   │   ├── values-cs
+│   │   │   │   │   │   │   │   └── values-cs.xml
+│   │   │   │   │   │   │   ├── values-da
+│   │   │   │   │   │   │   │   └── values-da.xml
+│   │   │   │   │   │   │   ├── values-de
+│   │   │   │   │   │   │   │   └── values-de.xml
+│   │   │   │   │   │   │   ├── values-el
+│   │   │   │   │   │   │   │   └── values-el.xml
+│   │   │   │   │   │   │   ├── values-en-rAU
+│   │   │   │   │   │   │   │   └── values-en-rAU.xml
+│   │   │   │   │   │   │   ├── values-en-rCA
+│   │   │   │   │   │   │   │   └── values-en-rCA.xml
+│   │   │   │   │   │   │   ├── values-en-rGB
+│   │   │   │   │   │   │   │   └── values-en-rGB.xml
+│   │   │   │   │   │   │   ├── values-en-rIN
+│   │   │   │   │   │   │   │   └── values-en-rIN.xml
+│   │   │   │   │   │   │   ├── values-en-rXC
+│   │   │   │   │   │   │   │   └── values-en-rXC.xml
+│   │   │   │   │   │   │   ├── values-es
+│   │   │   │   │   │   │   │   └── values-es.xml
+│   │   │   │   │   │   │   ├── values-es-rUS
+│   │   │   │   │   │   │   │   └── values-es-rUS.xml
+│   │   │   │   │   │   │   ├── values-et
+│   │   │   │   │   │   │   │   └── values-et.xml
+│   │   │   │   │   │   │   ├── values-eu
+│   │   │   │   │   │   │   │   └── values-eu.xml
+│   │   │   │   │   │   │   ├── values-fa
+│   │   │   │   │   │   │   │   └── values-fa.xml
+│   │   │   │   │   │   │   ├── values-fi
+│   │   │   │   │   │   │   │   └── values-fi.xml
+│   │   │   │   │   │   │   ├── values-fr
+│   │   │   │   │   │   │   │   └── values-fr.xml
+│   │   │   │   │   │   │   ├── values-fr-rCA
+│   │   │   │   │   │   │   │   └── values-fr-rCA.xml
+│   │   │   │   │   │   │   ├── values-gl
+│   │   │   │   │   │   │   │   └── values-gl.xml
+│   │   │   │   │   │   │   ├── values-gu
+│   │   │   │   │   │   │   │   └── values-gu.xml
+│   │   │   │   │   │   │   ├── values-hi
+│   │   │   │   │   │   │   │   └── values-hi.xml
+│   │   │   │   │   │   │   ├── values-hr
+│   │   │   │   │   │   │   │   └── values-hr.xml
+│   │   │   │   │   │   │   ├── values-hu
+│   │   │   │   │   │   │   │   └── values-hu.xml
+│   │   │   │   │   │   │   ├── values-hy
+│   │   │   │   │   │   │   │   └── values-hy.xml
+│   │   │   │   │   │   │   ├── values-in
+│   │   │   │   │   │   │   │   └── values-in.xml
+│   │   │   │   │   │   │   ├── values-is
+│   │   │   │   │   │   │   │   └── values-is.xml
+│   │   │   │   │   │   │   ├── values-it
+│   │   │   │   │   │   │   │   └── values-it.xml
+│   │   │   │   │   │   │   ├── values-iw
+│   │   │   │   │   │   │   │   └── values-iw.xml
+│   │   │   │   │   │   │   ├── values-ja
+│   │   │   │   │   │   │   │   └── values-ja.xml
+│   │   │   │   │   │   │   ├── values-ka
+│   │   │   │   │   │   │   │   └── values-ka.xml
+│   │   │   │   │   │   │   ├── values-kk
+│   │   │   │   │   │   │   │   └── values-kk.xml
+│   │   │   │   │   │   │   ├── values-km
+│   │   │   │   │   │   │   │   └── values-km.xml
+│   │   │   │   │   │   │   ├── values-kn
+│   │   │   │   │   │   │   │   └── values-kn.xml
+│   │   │   │   │   │   │   ├── values-ko
+│   │   │   │   │   │   │   │   └── values-ko.xml
+│   │   │   │   │   │   │   ├── values-ky
+│   │   │   │   │   │   │   │   └── values-ky.xml
+│   │   │   │   │   │   │   ├── values-lo
+│   │   │   │   │   │   │   │   └── values-lo.xml
+│   │   │   │   │   │   │   ├── values-lt
+│   │   │   │   │   │   │   │   └── values-lt.xml
+│   │   │   │   │   │   │   ├── values-lv
+│   │   │   │   │   │   │   │   └── values-lv.xml
+│   │   │   │   │   │   │   ├── values-mk
+│   │   │   │   │   │   │   │   └── values-mk.xml
+│   │   │   │   │   │   │   ├── values-ml
+│   │   │   │   │   │   │   │   └── values-ml.xml
+│   │   │   │   │   │   │   ├── values-mn
+│   │   │   │   │   │   │   │   └── values-mn.xml
+│   │   │   │   │   │   │   ├── values-mr
+│   │   │   │   │   │   │   │   └── values-mr.xml
+│   │   │   │   │   │   │   ├── values-ms
+│   │   │   │   │   │   │   │   └── values-ms.xml
+│   │   │   │   │   │   │   ├── values-my
+│   │   │   │   │   │   │   │   └── values-my.xml
+│   │   │   │   │   │   │   ├── values-nb
+│   │   │   │   │   │   │   │   └── values-nb.xml
+│   │   │   │   │   │   │   ├── values-ne
+│   │   │   │   │   │   │   │   └── values-ne.xml
+│   │   │   │   │   │   │   ├── values-nl
+│   │   │   │   │   │   │   │   └── values-nl.xml
+│   │   │   │   │   │   │   ├── values-or
+│   │   │   │   │   │   │   │   └── values-or.xml
+│   │   │   │   │   │   │   ├── values-pa
+│   │   │   │   │   │   │   │   └── values-pa.xml
+│   │   │   │   │   │   │   ├── values-pl
+│   │   │   │   │   │   │   │   └── values-pl.xml
+│   │   │   │   │   │   │   ├── values-pt
+│   │   │   │   │   │   │   │   └── values-pt.xml
+│   │   │   │   │   │   │   ├── values-pt-rBR
+│   │   │   │   │   │   │   │   └── values-pt-rBR.xml
+│   │   │   │   │   │   │   ├── values-pt-rPT
+│   │   │   │   │   │   │   │   └── values-pt-rPT.xml
+│   │   │   │   │   │   │   ├── values-ro
+│   │   │   │   │   │   │   │   └── values-ro.xml
+│   │   │   │   │   │   │   ├── values-ru
+│   │   │   │   │   │   │   │   └── values-ru.xml
+│   │   │   │   │   │   │   ├── values-si
+│   │   │   │   │   │   │   │   └── values-si.xml
+│   │   │   │   │   │   │   ├── values-sk
+│   │   │   │   │   │   │   │   └── values-sk.xml
+│   │   │   │   │   │   │   ├── values-sl
+│   │   │   │   │   │   │   │   └── values-sl.xml
+│   │   │   │   │   │   │   ├── values-sq
+│   │   │   │   │   │   │   │   └── values-sq.xml
+│   │   │   │   │   │   │   ├── values-sr
+│   │   │   │   │   │   │   │   └── values-sr.xml
+│   │   │   │   │   │   │   ├── values-sv
+│   │   │   │   │   │   │   │   └── values-sv.xml
+│   │   │   │   │   │   │   ├── values-sw
+│   │   │   │   │   │   │   │   └── values-sw.xml
+│   │   │   │   │   │   │   ├── values-ta
+│   │   │   │   │   │   │   │   └── values-ta.xml
+│   │   │   │   │   │   │   ├── values-te
+│   │   │   │   │   │   │   │   └── values-te.xml
+│   │   │   │   │   │   │   ├── values-th
+│   │   │   │   │   │   │   │   └── values-th.xml
+│   │   │   │   │   │   │   ├── values-tl
+│   │   │   │   │   │   │   │   └── values-tl.xml
+│   │   │   │   │   │   │   ├── values-tr
+│   │   │   │   │   │   │   │   └── values-tr.xml
+│   │   │   │   │   │   │   ├── values-uk
+│   │   │   │   │   │   │   │   └── values-uk.xml
+│   │   │   │   │   │   │   ├── values-ur
+│   │   │   │   │   │   │   │   └── values-ur.xml
+│   │   │   │   │   │   │   ├── values-uz
+│   │   │   │   │   │   │   │   └── values-uz.xml
+│   │   │   │   │   │   │   ├── values-v18
+│   │   │   │   │   │   │   │   └── values-v18.xml
+│   │   │   │   │   │   │   ├── values-v21
+│   │   │   │   │   │   │   │   └── values-v21.xml
+│   │   │   │   │   │   │   ├── values-v28
+│   │   │   │   │   │   │   │   └── values-v28.xml
+│   │   │   │   │   │   │   ├── values-vi
+│   │   │   │   │   │   │   │   └── values-vi.xml
+│   │   │   │   │   │   │   ├── values-zh-rCN
+│   │   │   │   │   │   │   │   └── values-zh-rCN.xml
+│   │   │   │   │   │   │   ├── values-zh-rHK
+│   │   │   │   │   │   │   │   └── values-zh-rHK.xml
+│   │   │   │   │   │   │   ├── values-zh-rTW
+│   │   │   │   │   │   │   │   └── values-zh-rTW.xml
+│   │   │   │   │   │   │   └── values-zu
+│   │   │   │   │   │   │       └── values-zu.xml
+│   │   │   │   │   │   ├── merger.xml
+│   │   │   │   │   │   └── stripped.dir
+│   │   │   │   │   └── packageDebugAndroidTestResources
+│   │   │   │   │       ├── compile-file-map.properties
+│   │   │   │   │       ├── merged.dir
+│   │   │   │   │       ├── merger.xml
+│   │   │   │   │       └── stripped.dir
+│   │   │   │   ├── debugAndroidTest-mergeJavaRes
+│   │   │   │   │   ├── merge-state
+│   │   │   │   │   └── zip-cache
+│   │   │   │   │       ├── 1Ollkp+EsVLo5Hsy+IrI_g==
+│   │   │   │   │       ├── 4a4GugbTCeGEixxgZsLm7Q==
+│   │   │   │   │       ├── 4_GAy9JjgQ2tkpf74dJMyw==
+│   │   │   │   │       ├── 4hF7ToLEAo9fGpZxEQmWIg==
+│   │   │   │   │       ├── c9Vy6vD2f0NSxaGL1qtYZw==
+│   │   │   │   │       ├── Ft9Ut1mhy18NBOQ52ohguQ==
+│   │   │   │   │       ├── fwuCFYpLzO7Wz8V9zLlQfA==
+│   │   │   │   │       ├── gion726R6pS6p1Peiswreg==
+│   │   │   │   │       ├── gjzHBecSmUJMsqFF9fyGvw==
+│   │   │   │   │       ├── jRlw3kq_VFgiyq2Qc_CbJw==
+│   │   │   │   │       ├── Lh8FyaDObP381gh_yK_M2Q==
+│   │   │   │   │       ├── o0TfYiPhelX8yjFEIgFHbQ==
+│   │   │   │   │       ├── SLWaC1ntvIFH2z0266u5KQ==
+│   │   │   │   │       ├── V8SH+eX6ZM5Q8kvQwBQXfg==
+│   │   │   │   │       ├── xhVXCEel59orgqMgdfRStw==
+│   │   │   │   │       └── ymHdPWs+m_QSfJ2DDmP2jQ==
+│   │   │   │   ├── debug-mergeJavaRes
+│   │   │   │   │   ├── merge-state
+│   │   │   │   │   └── zip-cache
+│   │   │   │   │       ├── 0Q1S4qELyuQNx53Io_N47A==
+│   │   │   │   │       ├── 1dKOEJ1Ni7vHvAmXjAMRBQ==
+│   │   │   │   │       ├── 22ZP9QD1zebPLYD9poWvgQ==
+│   │   │   │   │       ├── 2XmuLghNsfNJXeUH5FNMGg==
+│   │   │   │   │       ├── 34lRnU+Z0UiU4uNxY6a78Q==
+│   │   │   │   │       ├── 3f_gs+Q3llKNuPigm_I8IA==
+│   │   │   │   │       ├── 5jlfRWsFSR7vMziZGvWvRg==
+│   │   │   │   │       ├── 5_+S0bHnpZu2rqAkfZSUng==
+│   │   │   │   │       ├── 7bguONgP0LlpDLzMb0BIXw==
+│   │   │   │   │       ├── 7msvdiIcHRfHr17kZgT2Lg==
+│   │   │   │   │       ├── 7nGRIzAQNY4rlRlQV4CmXA==
+│   │   │   │   │       ├── 7tR1U+8gaHcOOvEbdciylA==
+│   │   │   │   │       ├── 8f2THw_o3dAdgKU1qm93zw==
+│   │   │   │   │       ├── BLCHduO8sQaHRv2rhn02tA==
+│   │   │   │   │       ├── bzerP33SRc_ZJondIVngEw==
+│   │   │   │   │       ├── c04lr6taDwjDK1xvHteMuw==
+│   │   │   │   │       ├── cb9k+1jgt_WEXv5JmKjuzQ==
+│   │   │   │   │       ├── CbyMJCAqM2HGLAbZ_RQqWg==
+│   │   │   │   │       ├── CGqUCEp2sE5yaqP7syyi6A==
+│   │   │   │   │       ├── d6v3ZfgjADiOr37Zn0Ughg==
+│   │   │   │   │       ├── e06UYBHYJkEe_no1zAirQQ==
+│   │   │   │   │       ├── E2qZQAbXhhAf4qoZ0rDSmg==
+│   │   │   │   │       ├── ecL+YWqBNBCD95yo2wuaXw==
+│   │   │   │   │       ├── eqzN8IUJfc1H4P4uSMszcg==
+│   │   │   │   │       ├── FzdrfiGIFOurTNQoF1Ti0w==
+│   │   │   │   │       ├── g6EE0JLCtdvCxb__S2YZuw==
+│   │   │   │   │       ├── gHErtyyuFDhZ_9WQa66g+w==
+│   │   │   │   │       ├── gmzMZ8biFmRz9BfxZflEOQ==
+│   │   │   │   │       ├── got3drYP9TUxyLUIFUcmzA==
+│   │   │   │   │       ├── gOZt+mJ0am+cT37DtUAu4w==
+│   │   │   │   │       ├── +gREbuBcqsB+lLGR3lDjaQ==
+│   │   │   │   │       ├── gsG1E7erBqTVI03G3JAKng==
+│   │   │   │   │       ├── gXz1pZWZfoYMYLdOkdwVVw==
+│   │   │   │   │       ├── hd0XlIkmygWrSLzaobR3lg==
+│   │   │   │   │       ├── HwQVxON4JcEQBnKNOnERqg==
+│   │   │   │   │       ├── iIIeaaxI5hYjnGMDrRjXlg==
+│   │   │   │   │       ├── jexfn73SQUjZgw1qLUaq9w==
+│   │   │   │   │       ├── jpwfJnj2Qm2KYL4nP9Z6+Q==
+│   │   │   │   │       ├── JxIV+YURlcZ7_bzrhQoqJg==
+│   │   │   │   │       ├── K0H8U1e4bNoYzfO9DKtBOQ==
+│   │   │   │   │       ├── lffN1B3OtMXKdgJLObNj1w==
+│   │   │   │   │       ├── LsjMv3Nmri9LiorysctvEw==
+│   │   │   │   │       ├── LT4Z4S+4rR4utiU64vUO+Q==
+│   │   │   │   │       ├── LVojA_hxkWroGIr87QX+Rw==
+│   │   │   │   │       ├── ly1P_f2ttOcg6SDrEe5ooA==
+│   │   │   │   │       ├── mbSgXGGA+vYXj7uGcKp3tQ==
+│   │   │   │   │       ├── mbZllhR01CGXnlyPGUjv5Q==
+│   │   │   │   │       ├── mDinOJlGHGvYY9+UB4jYcA==
+│   │   │   │   │       ├── mMHiwdTdM3QxwjI6f0p6Vg==
+│   │   │   │   │       ├── MWW6q2az0vZgHGVCRgKrcQ==
+│   │   │   │   │       ├── n8ObZMclZb+ZVS+GRhAYJA==
+│   │   │   │   │       ├── nVLgEellNLD_l_Rc5_rWow==
+│   │   │   │   │       ├── nzC4AtJUKhTajcPN3XAOhQ==
+│   │   │   │   │       ├── O4y8g5aJWLkvZNG8bhbrtQ==
+│   │   │   │   │       ├── OEEMwtsP40S5sw_MSFVaJQ==
+│   │   │   │   │       ├── OOGXbiHeOvsGnro1rDGI2w==
+│   │   │   │   │       ├── p1pPQS6TnyEuT6S6oIq5+Q==
+│   │   │   │   │       ├── pTThHYp9RIlG47ZGqag+5A==
+│   │   │   │   │       ├── py0cHJNE2goxCbRMFxwnCg==
+│   │   │   │   │       ├── PyyC63kIZr5M2yxispI4SA==
+│   │   │   │   │       ├── qhr6Ctr2svpJQgAL_5G97A==
+│   │   │   │   │       ├── qqD5KAnkXriBXEaR6JBmHA==
+│   │   │   │   │       ├── QXdps1PC7ufpce2pe1mDEA==
+│   │   │   │   │       ├── qZmir9CoWlIm0ENpqyYc6g==
+│   │   │   │   │       ├── +R1KFM5SIhqM+9gzj1X9Qg==
+│   │   │   │   │       ├── R4_6f9WSiR9+OeekBAQ07Q==
+│   │   │   │   │       ├── SgmjVyndfoIdTxmmHiY7bw==
+│   │   │   │   │       ├── SQFgGdal7HH4xEhUVj8TnA==
+│   │   │   │   │       ├── TzTvwf117k8HMhENCOogng==
+│   │   │   │   │       ├── v8Y22ShmLmn8Yh8NWGJosA==
+│   │   │   │   │       ├── VAH0qqiX0tbcxWUgH6Hh9Q==
+│   │   │   │   │       ├── vAwlAiR_qjtsRZ6KcL843A==
+│   │   │   │   │       ├── _vR4hnItX6QONA8+ZSrskg==
+│   │   │   │   │       ├── W3fwhoi2OlQk0Z3cZG6PxQ==
+│   │   │   │   │       ├── WB2O_y0i2mhmLohOQJWZ8Q==
+│   │   │   │   │       ├── wc3Q_oWckyHet5WuTU0aPw==
+│   │   │   │   │       ├── XKoQfBez8k4Rp8njo4n2Uw==
+│   │   │   │   │       ├── XSo4g+Q2rz8aqWbvVWtGJQ==
+│   │   │   │   │       ├── Y8NidPXmIX2VNGC0WfrQdw==
+│   │   │   │   │       ├── YDyM3yxYdGlIx1J2PL_YXg==
+│   │   │   │   │       ├── yEJDpbq_TUOe7+l5GggI6A==
+│   │   │   │   │       ├── YSQusNn7FEkd179glg32Mg==
+│   │   │   │   │       ├── zG4aFSrSRHDsDUHwzb3KFw==
+│   │   │   │   │       └── ZUIzfQfhEZcaj4n3SyQUHg==
+│   │   │   │   ├── mergeDebugAndroidTestAssets
+│   │   │   │   │   └── merger.xml
+│   │   │   │   ├── mergeDebugAndroidTestJniLibFolders
+│   │   │   │   │   └── merger.xml
+│   │   │   │   ├── mergeDebugAssets
+│   │   │   │   │   └── merger.xml
+│   │   │   │   ├── mergeDebugJniLibFolders
+│   │   │   │   │   └── merger.xml
+│   │   │   │   ├── packageDebug
+│   │   │   │   │   └── tmp
+│   │   │   │   │       └── debug
+│   │   │   │   │           ├── dex-renamer-state.txt
+│   │   │   │   │           └── zip-cache
+│   │   │   │   │               ├── androidResources
+│   │   │   │   │               └── javaResources0
+│   │   │   │   └── packageDebugAndroidTest
+│   │   │   │       └── tmp
+│   │   │   │           └── debugAndroidTest
+│   │   │   │               ├── dex-renamer-state.txt
+│   │   │   │               └── zip-cache
+│   │   │   │                   ├── androidResources
+│   │   │   │                   └── javaResources0
+│   │   │   ├── java_res
+│   │   │   │   ├── debug
+│   │   │   │   │   └── processDebugJavaRes
+│   │   │   │   │       └── out
+│   │   │   │   │           ├── com
+│   │   │   │   │           │   └── williamsel
+│   │   │   │   │           │       └── labkeep
+│   │   │   │   │           │           ├── core
+│   │   │   │   │           │           │   └── network
+│   │   │   │   │           │           ├── features
+│   │   │   │   │           │           │   ├── descripciondispositivo
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   └── presentacion
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   ├── editardispositivo
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   └── presentacion
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   ├── eliminardispositivo
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   ├── mapper
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   └── presentacion
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   ├── inventario
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   └── presentacion
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   ├── login
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   ├── mapper
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   └── presentation
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   └── nuevodispositivo
+│   │   │   │   │           │           │       ├── data
+│   │   │   │   │           │           │       │   ├── datasource
+│   │   │   │   │           │           │       │   │   ├── api
+│   │   │   │   │           │           │       │   │   └── models
+│   │   │   │   │           │           │       │   └── repositories
+│   │   │   │   │           │           │       ├── di
+│   │   │   │   │           │           │       ├── domain
+│   │   │   │   │           │           │       │   ├── entities
+│   │   │   │   │           │           │       │   ├── repositories
+│   │   │   │   │           │           │       │   └── usescases
+│   │   │   │   │           │           │       └── presentacion
+│   │   │   │   │           │           │           ├── screens
+│   │   │   │   │           │           │           └── viewmodels
+│   │   │   │   │           │           ├── feautures
+│   │   │   │   │           │           │   ├── descripciondispositivo
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   └── presentacion
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   ├── editardispositivo
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   └── presentacion
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   ├── eliminardispositivo
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   ├── mapper
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   └── presentacion
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   ├── inventario
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   ├── datasource
+│   │   │   │   │           │           │   │   │   │   ├── api
+│   │   │   │   │           │           │   │   │   │   └── models
+│   │   │   │   │           │           │   │   │   └── repositories
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   └── presentacion
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   ├── login
+│   │   │   │   │           │           │   │   ├── data
+│   │   │   │   │           │           │   │   │   └── datasource
+│   │   │   │   │           │           │   │   │       ├── api
+│   │   │   │   │           │           │   │   │       ├── mapper
+│   │   │   │   │           │           │   │   │       └── models
+│   │   │   │   │           │           │   │   ├── di
+│   │   │   │   │           │           │   │   ├── domain
+│   │   │   │   │           │           │   │   │   ├── entities
+│   │   │   │   │           │           │   │   │   ├── repositories
+│   │   │   │   │           │           │   │   │   └── usescases
+│   │   │   │   │           │           │   │   └── presentation
+│   │   │   │   │           │           │   │       ├── screens
+│   │   │   │   │           │           │   │       └── viewmodels
+│   │   │   │   │           │           │   └── nuevodispositivo
+│   │   │   │   │           │           │       ├── data
+│   │   │   │   │           │           │       │   ├── datasource
+│   │   │   │   │           │           │       │   │   ├── api
+│   │   │   │   │           │           │       │   │   └── models
+│   │   │   │   │           │           │       │   └── repositories
+│   │   │   │   │           │           │       ├── di
+│   │   │   │   │           │           │       ├── domain
+│   │   │   │   │           │           │       │   ├── entities
+│   │   │   │   │           │           │       │   ├── repositories
+│   │   │   │   │           │           │       │   └── usescases
+│   │   │   │   │           │           │       └── presentacion
+│   │   │   │   │           │           │           ├── screens
+│   │   │   │   │           │           │           └── viewmodels
+│   │   │   │   │           │           └── ui
+│   │   │   │   │           │               └── theme
+│   │   │   │   │           └── META-INF
+│   │   │   │   │               └── app.kotlin_module
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── processDebugAndroidTestJavaRes
+│   │   │   │           └── out
+│   │   │   │               ├── com
+│   │   │   │               │   └── williamsel
+│   │   │   │               │       └── labkeep
+│   │   │   │               └── META-INF
+│   │   │   │                   └── app.kotlin_module
+│   │   │   ├── linked_resources_binary_format
+│   │   │   │   ├── debug
+│   │   │   │   │   └── processDebugResources
+│   │   │   │   │       ├── linked-resources-binary-format-debug.ap_
+│   │   │   │   │       └── output-metadata.json
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── processDebugAndroidTestResources
+│   │   │   │           ├── linked-resources-binary-format.ap_
+│   │   │   │           └── output-metadata.json
+│   │   │   ├── local_only_symbol_list
+│   │   │   │   ├── debug
+│   │   │   │   │   └── parseDebugLocalResources
+│   │   │   │   │       └── R-def.txt
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── parseDebugAndroidTestLocalResources
+│   │   │   │           └── R-def.txt
+│   │   │   ├── manifest_merge_blame_file
+│   │   │   │   ├── debug
+│   │   │   │   │   └── processDebugMainManifest
+│   │   │   │   │       └── manifest-merger-blame-debug-report.txt
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── processDebugAndroidTestManifest
+│   │   │   │           └── manifest-merger-blame-debug-androidTest-report.txt
+│   │   │   ├── merged_java_res
+│   │   │   │   ├── debug
+│   │   │   │   │   └── mergeDebugJavaResource
+│   │   │   │   │       └── base.jar
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── mergeDebugAndroidTestJavaResource
+│   │   │   │           └── feature-app.jar
+│   │   │   ├── merged_jni_libs
+│   │   │   │   ├── debug
+│   │   │   │   │   └── mergeDebugJniLibFolders
+│   │   │   │   │       └── out
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── mergeDebugAndroidTestJniLibFolders
+│   │   │   │           └── out
+│   │   │   ├── merged_manifest
+│   │   │   │   └── debug
+│   │   │   │       └── processDebugMainManifest
+│   │   │   │           └── AndroidManifest.xml
+│   │   │   ├── merged_manifests
+│   │   │   │   └── debug
+│   │   │   │       └── processDebugManifest
+│   │   │   │           ├── AndroidManifest.xml
+│   │   │   │           └── output-metadata.json
+│   │   │   ├── merged_native_libs
+│   │   │   │   └── debug
+│   │   │   │       └── mergeDebugNativeLibs
+│   │   │   │           └── out
+│   │   │   │               └── lib
+│   │   │   │                   ├── arm64-v8a
+│   │   │   │                   │   └── libandroidx.graphics.path.so
+│   │   │   │                   ├── armeabi-v7a
+│   │   │   │                   │   └── libandroidx.graphics.path.so
+│   │   │   │                   ├── x86
+│   │   │   │                   │   └── libandroidx.graphics.path.so
+│   │   │   │                   └── x86_64
+│   │   │   │                       └── libandroidx.graphics.path.so
+│   │   │   ├── merged_res
+│   │   │   │   ├── debug
+│   │   │   │   │   └── mergeDebugResources
+│   │   │   │   │       ├── drawable_ic_launcher_background.xml.flat
+│   │   │   │   │       ├── drawable_ic_launcher_foreground.xml.flat
+│   │   │   │   │       ├── mipmap-anydpi-v26_ic_launcher_round.xml.flat
+│   │   │   │   │       ├── mipmap-anydpi-v26_ic_launcher.xml.flat
+│   │   │   │   │       ├── mipmap-hdpi_ic_launcher_round.webp.flat
+│   │   │   │   │       ├── mipmap-hdpi_ic_launcher.webp.flat
+│   │   │   │   │       ├── mipmap-mdpi_ic_launcher_round.webp.flat
+│   │   │   │   │       ├── mipmap-mdpi_ic_launcher.webp.flat
+│   │   │   │   │       ├── mipmap-xhdpi_ic_launcher_round.webp.flat
+│   │   │   │   │       ├── mipmap-xhdpi_ic_launcher.webp.flat
+│   │   │   │   │       ├── mipmap-xxhdpi_ic_launcher_round.webp.flat
+│   │   │   │   │       ├── mipmap-xxhdpi_ic_launcher.webp.flat
+│   │   │   │   │       ├── mipmap-xxxhdpi_ic_launcher_round.webp.flat
+│   │   │   │   │       ├── mipmap-xxxhdpi_ic_launcher.webp.flat
+│   │   │   │   │       ├── values-af_values-af.arsc.flat
+│   │   │   │   │       ├── values-am_values-am.arsc.flat
+│   │   │   │   │       ├── values-ar_values-ar.arsc.flat
+│   │   │   │   │       ├── values-as_values-as.arsc.flat
+│   │   │   │   │       ├── values-az_values-az.arsc.flat
+│   │   │   │   │       ├── values-be_values-be.arsc.flat
+│   │   │   │   │       ├── values-bg_values-bg.arsc.flat
+│   │   │   │   │       ├── values-bn_values-bn.arsc.flat
+│   │   │   │   │       ├── values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+│   │   │   │   │       ├── values-bs_values-bs.arsc.flat
+│   │   │   │   │       ├── values-ca_values-ca.arsc.flat
+│   │   │   │   │       ├── values-cs_values-cs.arsc.flat
+│   │   │   │   │       ├── values-da_values-da.arsc.flat
+│   │   │   │   │       ├── values-de_values-de.arsc.flat
+│   │   │   │   │       ├── values-el_values-el.arsc.flat
+│   │   │   │   │       ├── values-en-rAU_values-en-rAU.arsc.flat
+│   │   │   │   │       ├── values-en-rCA_values-en-rCA.arsc.flat
+│   │   │   │   │       ├── values-en-rGB_values-en-rGB.arsc.flat
+│   │   │   │   │       ├── values-en-rIN_values-en-rIN.arsc.flat
+│   │   │   │   │       ├── values-en-rXC_values-en-rXC.arsc.flat
+│   │   │   │   │       ├── values-es-rUS_values-es-rUS.arsc.flat
+│   │   │   │   │       ├── values-es_values-es.arsc.flat
+│   │   │   │   │       ├── values-et_values-et.arsc.flat
+│   │   │   │   │       ├── values-eu_values-eu.arsc.flat
+│   │   │   │   │       ├── values-fa_values-fa.arsc.flat
+│   │   │   │   │       ├── values-fi_values-fi.arsc.flat
+│   │   │   │   │       ├── values-fr-rCA_values-fr-rCA.arsc.flat
+│   │   │   │   │       ├── values-fr_values-fr.arsc.flat
+│   │   │   │   │       ├── values-gl_values-gl.arsc.flat
+│   │   │   │   │       ├── values-gu_values-gu.arsc.flat
+│   │   │   │   │       ├── values-hi_values-hi.arsc.flat
+│   │   │   │   │       ├── values-hr_values-hr.arsc.flat
+│   │   │   │   │       ├── values-hu_values-hu.arsc.flat
+│   │   │   │   │       ├── values-hy_values-hy.arsc.flat
+│   │   │   │   │       ├── values-in_values-in.arsc.flat
+│   │   │   │   │       ├── values-is_values-is.arsc.flat
+│   │   │   │   │       ├── values-it_values-it.arsc.flat
+│   │   │   │   │       ├── values-iw_values-iw.arsc.flat
+│   │   │   │   │       ├── values-ja_values-ja.arsc.flat
+│   │   │   │   │       ├── values-ka_values-ka.arsc.flat
+│   │   │   │   │       ├── values-kk_values-kk.arsc.flat
+│   │   │   │   │       ├── values-km_values-km.arsc.flat
+│   │   │   │   │       ├── values-kn_values-kn.arsc.flat
+│   │   │   │   │       ├── values-ko_values-ko.arsc.flat
+│   │   │   │   │       ├── values-ky_values-ky.arsc.flat
+│   │   │   │   │       ├── values-lo_values-lo.arsc.flat
+│   │   │   │   │       ├── values-lt_values-lt.arsc.flat
+│   │   │   │   │       ├── values-lv_values-lv.arsc.flat
+│   │   │   │   │       ├── values-mk_values-mk.arsc.flat
+│   │   │   │   │       ├── values-ml_values-ml.arsc.flat
+│   │   │   │   │       ├── values-mn_values-mn.arsc.flat
+│   │   │   │   │       ├── values-mr_values-mr.arsc.flat
+│   │   │   │   │       ├── values-ms_values-ms.arsc.flat
+│   │   │   │   │       ├── values-my_values-my.arsc.flat
+│   │   │   │   │       ├── values-nb_values-nb.arsc.flat
+│   │   │   │   │       ├── values-ne_values-ne.arsc.flat
+│   │   │   │   │       ├── values-nl_values-nl.arsc.flat
+│   │   │   │   │       ├── values-or_values-or.arsc.flat
+│   │   │   │   │       ├── values-pa_values-pa.arsc.flat
+│   │   │   │   │       ├── values-pl_values-pl.arsc.flat
+│   │   │   │   │       ├── values-pt-rBR_values-pt-rBR.arsc.flat
+│   │   │   │   │       ├── values-pt-rPT_values-pt-rPT.arsc.flat
+│   │   │   │   │       ├── values-pt_values-pt.arsc.flat
+│   │   │   │   │       ├── values-ro_values-ro.arsc.flat
+│   │   │   │   │       ├── values-ru_values-ru.arsc.flat
+│   │   │   │   │       ├── values-si_values-si.arsc.flat
+│   │   │   │   │       ├── values-sk_values-sk.arsc.flat
+│   │   │   │   │       ├── values-sl_values-sl.arsc.flat
+│   │   │   │   │       ├── values-sq_values-sq.arsc.flat
+│   │   │   │   │       ├── values-sr_values-sr.arsc.flat
+│   │   │   │   │       ├── values-sv_values-sv.arsc.flat
+│   │   │   │   │       ├── values-sw_values-sw.arsc.flat
+│   │   │   │   │       ├── values-ta_values-ta.arsc.flat
+│   │   │   │   │       ├── values-te_values-te.arsc.flat
+│   │   │   │   │       ├── values-th_values-th.arsc.flat
+│   │   │   │   │       ├── values-tl_values-tl.arsc.flat
+│   │   │   │   │       ├── values-tr_values-tr.arsc.flat
+│   │   │   │   │       ├── values-uk_values-uk.arsc.flat
+│   │   │   │   │       ├── values-ur_values-ur.arsc.flat
+│   │   │   │   │       ├── values-uz_values-uz.arsc.flat
+│   │   │   │   │       ├── values-v21_values-v21.arsc.flat
+│   │   │   │   │       ├── values-v30_values-v30.arsc.flat
+│   │   │   │   │       ├── values_values.arsc.flat
+│   │   │   │   │       ├── values-vi_values-vi.arsc.flat
+│   │   │   │   │       ├── values-zh-rCN_values-zh-rCN.arsc.flat
+│   │   │   │   │       ├── values-zh-rHK_values-zh-rHK.arsc.flat
+│   │   │   │   │       ├── values-zh-rTW_values-zh-rTW.arsc.flat
+│   │   │   │   │       ├── values-zu_values-zu.arsc.flat
+│   │   │   │   │       ├── xml_backup_rules.xml.flat
+│   │   │   │   │       └── xml_data_extraction_rules.xml.flat
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── mergeDebugAndroidTestResources
+│   │   │   │           ├── values-af_values-af.arsc.flat
+│   │   │   │           ├── values-am_values-am.arsc.flat
+│   │   │   │           ├── values-ar_values-ar.arsc.flat
+│   │   │   │           ├── values-as_values-as.arsc.flat
+│   │   │   │           ├── values-az_values-az.arsc.flat
+│   │   │   │           ├── values-be_values-be.arsc.flat
+│   │   │   │           ├── values-bg_values-bg.arsc.flat
+│   │   │   │           ├── values-bn_values-bn.arsc.flat
+│   │   │   │           ├── values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+│   │   │   │           ├── values-bs_values-bs.arsc.flat
+│   │   │   │           ├── values-ca_values-ca.arsc.flat
+│   │   │   │           ├── values-cs_values-cs.arsc.flat
+│   │   │   │           ├── values-da_values-da.arsc.flat
+│   │   │   │           ├── values-de_values-de.arsc.flat
+│   │   │   │           ├── values-el_values-el.arsc.flat
+│   │   │   │           ├── values-en-rAU_values-en-rAU.arsc.flat
+│   │   │   │           ├── values-en-rCA_values-en-rCA.arsc.flat
+│   │   │   │           ├── values-en-rGB_values-en-rGB.arsc.flat
+│   │   │   │           ├── values-en-rIN_values-en-rIN.arsc.flat
+│   │   │   │           ├── values-en-rXC_values-en-rXC.arsc.flat
+│   │   │   │           ├── values-es-rUS_values-es-rUS.arsc.flat
+│   │   │   │           ├── values-es_values-es.arsc.flat
+│   │   │   │           ├── values-et_values-et.arsc.flat
+│   │   │   │           ├── values-eu_values-eu.arsc.flat
+│   │   │   │           ├── values-fa_values-fa.arsc.flat
+│   │   │   │           ├── values-fi_values-fi.arsc.flat
+│   │   │   │           ├── values-fr-rCA_values-fr-rCA.arsc.flat
+│   │   │   │           ├── values-fr_values-fr.arsc.flat
+│   │   │   │           ├── values-gl_values-gl.arsc.flat
+│   │   │   │           ├── values-gu_values-gu.arsc.flat
+│   │   │   │           ├── values-hi_values-hi.arsc.flat
+│   │   │   │           ├── values-hr_values-hr.arsc.flat
+│   │   │   │           ├── values-hu_values-hu.arsc.flat
+│   │   │   │           ├── values-hy_values-hy.arsc.flat
+│   │   │   │           ├── values-in_values-in.arsc.flat
+│   │   │   │           ├── values-is_values-is.arsc.flat
+│   │   │   │           ├── values-it_values-it.arsc.flat
+│   │   │   │           ├── values-iw_values-iw.arsc.flat
+│   │   │   │           ├── values-ja_values-ja.arsc.flat
+│   │   │   │           ├── values-ka_values-ka.arsc.flat
+│   │   │   │           ├── values-kk_values-kk.arsc.flat
+│   │   │   │           ├── values-km_values-km.arsc.flat
+│   │   │   │           ├── values-kn_values-kn.arsc.flat
+│   │   │   │           ├── values-ko_values-ko.arsc.flat
+│   │   │   │           ├── values-ky_values-ky.arsc.flat
+│   │   │   │           ├── values-lo_values-lo.arsc.flat
+│   │   │   │           ├── values-lt_values-lt.arsc.flat
+│   │   │   │           ├── values-lv_values-lv.arsc.flat
+│   │   │   │           ├── values-mk_values-mk.arsc.flat
+│   │   │   │           ├── values-ml_values-ml.arsc.flat
+│   │   │   │           ├── values-mn_values-mn.arsc.flat
+│   │   │   │           ├── values-mr_values-mr.arsc.flat
+│   │   │   │           ├── values-ms_values-ms.arsc.flat
+│   │   │   │           ├── values-my_values-my.arsc.flat
+│   │   │   │           ├── values-nb_values-nb.arsc.flat
+│   │   │   │           ├── values-ne_values-ne.arsc.flat
+│   │   │   │           ├── values-nl_values-nl.arsc.flat
+│   │   │   │           ├── values-or_values-or.arsc.flat
+│   │   │   │           ├── values-pa_values-pa.arsc.flat
+│   │   │   │           ├── values-pl_values-pl.arsc.flat
+│   │   │   │           ├── values-pt-rBR_values-pt-rBR.arsc.flat
+│   │   │   │           ├── values-pt-rPT_values-pt-rPT.arsc.flat
+│   │   │   │           ├── values-pt_values-pt.arsc.flat
+│   │   │   │           ├── values-ro_values-ro.arsc.flat
+│   │   │   │           ├── values-ru_values-ru.arsc.flat
+│   │   │   │           ├── values-si_values-si.arsc.flat
+│   │   │   │           ├── values-sk_values-sk.arsc.flat
+│   │   │   │           ├── values-sl_values-sl.arsc.flat
+│   │   │   │           ├── values-sq_values-sq.arsc.flat
+│   │   │   │           ├── values-sr_values-sr.arsc.flat
+│   │   │   │           ├── values-sv_values-sv.arsc.flat
+│   │   │   │           ├── values-sw_values-sw.arsc.flat
+│   │   │   │           ├── values-ta_values-ta.arsc.flat
+│   │   │   │           ├── values-te_values-te.arsc.flat
+│   │   │   │           ├── values-th_values-th.arsc.flat
+│   │   │   │           ├── values-tl_values-tl.arsc.flat
+│   │   │   │           ├── values-tr_values-tr.arsc.flat
+│   │   │   │           ├── values-uk_values-uk.arsc.flat
+│   │   │   │           ├── values-ur_values-ur.arsc.flat
+│   │   │   │           ├── values-uz_values-uz.arsc.flat
+│   │   │   │           ├── values-v18_values-v18.arsc.flat
+│   │   │   │           ├── values-v21_values-v21.arsc.flat
+│   │   │   │           ├── values-v28_values-v28.arsc.flat
+│   │   │   │           ├── values_values.arsc.flat
+│   │   │   │           ├── values-vi_values-vi.arsc.flat
+│   │   │   │           ├── values-zh-rCN_values-zh-rCN.arsc.flat
+│   │   │   │           ├── values-zh-rHK_values-zh-rHK.arsc.flat
+│   │   │   │           ├── values-zh-rTW_values-zh-rTW.arsc.flat
+│   │   │   │           └── values-zu_values-zu.arsc.flat
+│   │   │   ├── merged_res_blame_folder
+│   │   │   │   ├── debug
+│   │   │   │   │   └── mergeDebugResources
+│   │   │   │   │       └── out
+│   │   │   │   │           ├── multi-v2
+│   │   │   │   │           │   ├── mergeDebugResources.json
+│   │   │   │   │           │   ├── values-af.json
+│   │   │   │   │           │   ├── values-am.json
+│   │   │   │   │           │   ├── values-ar.json
+│   │   │   │   │           │   ├── values-as.json
+│   │   │   │   │           │   ├── values-az.json
+│   │   │   │   │           │   ├── values-be.json
+│   │   │   │   │           │   ├── values-bg.json
+│   │   │   │   │           │   ├── values-bn.json
+│   │   │   │   │           │   ├── values-bs.json
+│   │   │   │   │           │   ├── values-b+sr+Latn.json
+│   │   │   │   │           │   ├── values-ca.json
+│   │   │   │   │           │   ├── values-cs.json
+│   │   │   │   │           │   ├── values-da.json
+│   │   │   │   │           │   ├── values-de.json
+│   │   │   │   │           │   ├── values-el.json
+│   │   │   │   │           │   ├── values-en-rAU.json
+│   │   │   │   │           │   ├── values-en-rCA.json
+│   │   │   │   │           │   ├── values-en-rGB.json
+│   │   │   │   │           │   ├── values-en-rIN.json
+│   │   │   │   │           │   ├── values-en-rXC.json
+│   │   │   │   │           │   ├── values-es.json
+│   │   │   │   │           │   ├── values-es-rUS.json
+│   │   │   │   │           │   ├── values-et.json
+│   │   │   │   │           │   ├── values-eu.json
+│   │   │   │   │           │   ├── values-fa.json
+│   │   │   │   │           │   ├── values-fi.json
+│   │   │   │   │           │   ├── values-fr.json
+│   │   │   │   │           │   ├── values-fr-rCA.json
+│   │   │   │   │           │   ├── values-gl.json
+│   │   │   │   │           │   ├── values-gu.json
+│   │   │   │   │           │   ├── values-hi.json
+│   │   │   │   │           │   ├── values-hr.json
+│   │   │   │   │           │   ├── values-hu.json
+│   │   │   │   │           │   ├── values-hy.json
+│   │   │   │   │           │   ├── values-in.json
+│   │   │   │   │           │   ├── values-is.json
+│   │   │   │   │           │   ├── values-it.json
+│   │   │   │   │           │   ├── values-iw.json
+│   │   │   │   │           │   ├── values-ja.json
+│   │   │   │   │           │   ├── values.json
+│   │   │   │   │           │   ├── values-ka.json
+│   │   │   │   │           │   ├── values-kk.json
+│   │   │   │   │           │   ├── values-km.json
+│   │   │   │   │           │   ├── values-kn.json
+│   │   │   │   │           │   ├── values-ko.json
+│   │   │   │   │           │   ├── values-ky.json
+│   │   │   │   │           │   ├── values-lo.json
+│   │   │   │   │           │   ├── values-lt.json
+│   │   │   │   │           │   ├── values-lv.json
+│   │   │   │   │           │   ├── values-mk.json
+│   │   │   │   │           │   ├── values-ml.json
+│   │   │   │   │           │   ├── values-mn.json
+│   │   │   │   │           │   ├── values-mr.json
+│   │   │   │   │           │   ├── values-ms.json
+│   │   │   │   │           │   ├── values-my.json
+│   │   │   │   │           │   ├── values-nb.json
+│   │   │   │   │           │   ├── values-ne.json
+│   │   │   │   │           │   ├── values-nl.json
+│   │   │   │   │           │   ├── values-or.json
+│   │   │   │   │           │   ├── values-pa.json
+│   │   │   │   │           │   ├── values-pl.json
+│   │   │   │   │           │   ├── values-pt.json
+│   │   │   │   │           │   ├── values-pt-rBR.json
+│   │   │   │   │           │   ├── values-pt-rPT.json
+│   │   │   │   │           │   ├── values-ro.json
+│   │   │   │   │           │   ├── values-ru.json
+│   │   │   │   │           │   ├── values-si.json
+│   │   │   │   │           │   ├── values-sk.json
+│   │   │   │   │           │   ├── values-sl.json
+│   │   │   │   │           │   ├── values-sq.json
+│   │   │   │   │           │   ├── values-sr.json
+│   │   │   │   │           │   ├── values-sv.json
+│   │   │   │   │           │   ├── values-sw.json
+│   │   │   │   │           │   ├── values-ta.json
+│   │   │   │   │           │   ├── values-te.json
+│   │   │   │   │           │   ├── values-th.json
+│   │   │   │   │           │   ├── values-tl.json
+│   │   │   │   │           │   ├── values-tr.json
+│   │   │   │   │           │   ├── values-uk.json
+│   │   │   │   │           │   ├── values-ur.json
+│   │   │   │   │           │   ├── values-uz.json
+│   │   │   │   │           │   ├── values-v21.json
+│   │   │   │   │           │   ├── values-v30.json
+│   │   │   │   │           │   ├── values-vi.json
+│   │   │   │   │           │   ├── values-zh-rCN.json
+│   │   │   │   │           │   ├── values-zh-rHK.json
+│   │   │   │   │           │   ├── values-zh-rTW.json
+│   │   │   │   │           │   └── values-zu.json
+│   │   │   │   │           └── single
+│   │   │   │   │               └── mergeDebugResources.json
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── mergeDebugAndroidTestResources
+│   │   │   │           └── out
+│   │   │   │               └── multi-v2
+│   │   │   │                   ├── mergeDebugAndroidTestResources.json
+│   │   │   │                   ├── values-af.json
+│   │   │   │                   ├── values-am.json
+│   │   │   │                   ├── values-ar.json
+│   │   │   │                   ├── values-as.json
+│   │   │   │                   ├── values-az.json
+│   │   │   │                   ├── values-be.json
+│   │   │   │                   ├── values-bg.json
+│   │   │   │                   ├── values-bn.json
+│   │   │   │                   ├── values-bs.json
+│   │   │   │                   ├── values-b+sr+Latn.json
+│   │   │   │                   ├── values-ca.json
+│   │   │   │                   ├── values-cs.json
+│   │   │   │                   ├── values-da.json
+│   │   │   │                   ├── values-de.json
+│   │   │   │                   ├── values-el.json
+│   │   │   │                   ├── values-en-rAU.json
+│   │   │   │                   ├── values-en-rCA.json
+│   │   │   │                   ├── values-en-rGB.json
+│   │   │   │                   ├── values-en-rIN.json
+│   │   │   │                   ├── values-en-rXC.json
+│   │   │   │                   ├── values-es.json
+│   │   │   │                   ├── values-es-rUS.json
+│   │   │   │                   ├── values-et.json
+│   │   │   │                   ├── values-eu.json
+│   │   │   │                   ├── values-fa.json
+│   │   │   │                   ├── values-fi.json
+│   │   │   │                   ├── values-fr.json
+│   │   │   │                   ├── values-fr-rCA.json
+│   │   │   │                   ├── values-gl.json
+│   │   │   │                   ├── values-gu.json
+│   │   │   │                   ├── values-hi.json
+│   │   │   │                   ├── values-hr.json
+│   │   │   │                   ├── values-hu.json
+│   │   │   │                   ├── values-hy.json
+│   │   │   │                   ├── values-in.json
+│   │   │   │                   ├── values-is.json
+│   │   │   │                   ├── values-it.json
+│   │   │   │                   ├── values-iw.json
+│   │   │   │                   ├── values-ja.json
+│   │   │   │                   ├── values.json
+│   │   │   │                   ├── values-ka.json
+│   │   │   │                   ├── values-kk.json
+│   │   │   │                   ├── values-km.json
+│   │   │   │                   ├── values-kn.json
+│   │   │   │                   ├── values-ko.json
+│   │   │   │                   ├── values-ky.json
+│   │   │   │                   ├── values-lo.json
+│   │   │   │                   ├── values-lt.json
+│   │   │   │                   ├── values-lv.json
+│   │   │   │                   ├── values-mk.json
+│   │   │   │                   ├── values-ml.json
+│   │   │   │                   ├── values-mn.json
+│   │   │   │                   ├── values-mr.json
+│   │   │   │                   ├── values-ms.json
+│   │   │   │                   ├── values-my.json
+│   │   │   │                   ├── values-nb.json
+│   │   │   │                   ├── values-ne.json
+│   │   │   │                   ├── values-nl.json
+│   │   │   │                   ├── values-or.json
+│   │   │   │                   ├── values-pa.json
+│   │   │   │                   ├── values-pl.json
+│   │   │   │                   ├── values-pt.json
+│   │   │   │                   ├── values-pt-rBR.json
+│   │   │   │                   ├── values-pt-rPT.json
+│   │   │   │                   ├── values-ro.json
+│   │   │   │                   ├── values-ru.json
+│   │   │   │                   ├── values-si.json
+│   │   │   │                   ├── values-sk.json
+│   │   │   │                   ├── values-sl.json
+│   │   │   │                   ├── values-sq.json
+│   │   │   │                   ├── values-sr.json
+│   │   │   │                   ├── values-sv.json
+│   │   │   │                   ├── values-sw.json
+│   │   │   │                   ├── values-ta.json
+│   │   │   │                   ├── values-te.json
+│   │   │   │                   ├── values-th.json
+│   │   │   │                   ├── values-tl.json
+│   │   │   │                   ├── values-tr.json
+│   │   │   │                   ├── values-uk.json
+│   │   │   │                   ├── values-ur.json
+│   │   │   │                   ├── values-uz.json
+│   │   │   │                   ├── values-v18.json
+│   │   │   │                   ├── values-v21.json
+│   │   │   │                   ├── values-v28.json
+│   │   │   │                   ├── values-vi.json
+│   │   │   │                   ├── values-zh-rCN.json
+│   │   │   │                   ├── values-zh-rHK.json
+│   │   │   │                   ├── values-zh-rTW.json
+│   │   │   │                   └── values-zu.json
+│   │   │   ├── merged_test_only_native_libs
+│   │   │   │   └── debug
+│   │   │   │       └── mergeDebugNativeLibs
+│   │   │   │           └── out
+│   │   │   ├── mixed_scope_dex_archive
+│   │   │   │   ├── debug
+│   │   │   │   │   └── dexBuilderDebug
+│   │   │   │   │       └── out
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── dexBuilderDebugAndroidTest
+│   │   │   │           └── out
+│   │   │   ├── navigation_json
+│   │   │   │   └── debug
+│   │   │   │       └── extractDeepLinksDebug
+│   │   │   │           └── navigation.json
+│   │   │   ├── nested_resources_validation_report
+│   │   │   │   ├── debug
+│   │   │   │   │   └── generateDebugResources
+│   │   │   │   │       └── nestedResourcesValidationReport.txt
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── generateDebugAndroidTestResources
+│   │   │   │           └── nestedResourcesValidationReport.txt
+│   │   │   ├── packaged_manifests
+│   │   │   │   ├── debug
+│   │   │   │   │   └── processDebugManifestForPackage
+│   │   │   │   │       ├── AndroidManifest.xml
+│   │   │   │   │       └── output-metadata.json
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── processDebugAndroidTestManifest
+│   │   │   │           ├── AndroidManifest.xml
+│   │   │   │           └── output-metadata.json
+│   │   │   ├── packaged_res
+│   │   │   │   ├── debug
+│   │   │   │   │   └── packageDebugResources
+│   │   │   │   │       ├── drawable
+│   │   │   │   │       │   ├── ic_launcher_background.xml
+│   │   │   │   │       │   └── ic_launcher_foreground.xml
+│   │   │   │   │       ├── mipmap-anydpi-v26
+│   │   │   │   │       │   ├── ic_launcher_round.xml
+│   │   │   │   │       │   └── ic_launcher.xml
+│   │   │   │   │       ├── mipmap-hdpi-v4
+│   │   │   │   │       │   ├── ic_launcher_round.webp
+│   │   │   │   │       │   └── ic_launcher.webp
+│   │   │   │   │       ├── mipmap-mdpi-v4
+│   │   │   │   │       │   ├── ic_launcher_round.webp
+│   │   │   │   │       │   └── ic_launcher.webp
+│   │   │   │   │       ├── mipmap-xhdpi-v4
+│   │   │   │   │       │   ├── ic_launcher_round.webp
+│   │   │   │   │       │   └── ic_launcher.webp
+│   │   │   │   │       ├── mipmap-xxhdpi-v4
+│   │   │   │   │       │   ├── ic_launcher_round.webp
+│   │   │   │   │       │   └── ic_launcher.webp
+│   │   │   │   │       ├── mipmap-xxxhdpi-v4
+│   │   │   │   │       │   ├── ic_launcher_round.webp
+│   │   │   │   │       │   └── ic_launcher.webp
+│   │   │   │   │       ├── values
+│   │   │   │   │       │   └── values.xml
+│   │   │   │   │       └── xml
+│   │   │   │   │           ├── backup_rules.xml
+│   │   │   │   │           └── data_extraction_rules.xml
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── packageDebugAndroidTestResources
+│   │   │   ├── project_dex_archive
+│   │   │   │   ├── debug
+│   │   │   │   │   └── dexBuilderDebug
+│   │   │   │   │       └── out
+│   │   │   │   │           ├── c4f3d3e7a243811850316bbe5ce02a99c4e0513ea69c80b12ee2bd4def47f54f_0.jar
+│   │   │   │   │           ├── c4f3d3e7a243811850316bbe5ce02a99c4e0513ea69c80b12ee2bd4def47f54f_1.jar
+│   │   │   │   │           ├── c4f3d3e7a243811850316bbe5ce02a99c4e0513ea69c80b12ee2bd4def47f54f_2.jar
+│   │   │   │   │           ├── c4f3d3e7a243811850316bbe5ce02a99c4e0513ea69c80b12ee2bd4def47f54f_3.jar
+│   │   │   │   │           ├── c4f3d3e7a243811850316bbe5ce02a99c4e0513ea69c80b12ee2bd4def47f54f_4.jar
+│   │   │   │   │           ├── c4f3d3e7a243811850316bbe5ce02a99c4e0513ea69c80b12ee2bd4def47f54f_5.jar
+│   │   │   │   │           ├── c4f3d3e7a243811850316bbe5ce02a99c4e0513ea69c80b12ee2bd4def47f54f_6.jar
+│   │   │   │   │           ├── c4f3d3e7a243811850316bbe5ce02a99c4e0513ea69c80b12ee2bd4def47f54f_7.jar
+│   │   │   │   │           └── com
+│   │   │   │   │               └── williamsel
+│   │   │   │   │                   └── labkeep
+│   │   │   │   │                       ├── core
+│   │   │   │   │                       │   └── network
+│   │   │   │   │                       │       └── RetrofitClient.dex
+│   │   │   │   │                       ├── features
+│   │   │   │   │                       │   ├── descripciondispositivo
+│   │   │   │   │                       │   │   ├── data
+│   │   │   │   │                       │   │   │   ├── datasource
+│   │   │   │   │                       │   │   │   │   ├── api
+│   │   │   │   │                       │   │   │   │   │   └── JsonPlaceHolderDescripcionDispositivoApi.dex
+│   │   │   │   │                       │   │   │   │   └── models
+│   │   │   │   │                       │   │   │   │       └── DescripcionDispositivoDto.dex
+│   │   │   │   │                       │   │   │   └── repositories
+│   │   │   │   │                       │   │   │       └── DescripcionDispositivoImpl.dex
+│   │   │   │   │                       │   │   ├── di
+│   │   │   │   │                       │   │   │   └── DescripcionDispositivoProvider.dex
+│   │   │   │   │                       │   │   ├── domain
+│   │   │   │   │                       │   │   │   ├── entities
+│   │   │   │   │                       │   │   │   │   └── DescripcionDispositivo.dex
+│   │   │   │   │                       │   │   │   ├── repositories
+│   │   │   │   │                       │   │   │   │   └── DescripcionDispositivoRepository.dex
+│   │   │   │   │                       │   │   │   └── usescases
+│   │   │   │   │                       │   │   │       └── GetIdDescripcionDispositivoUseCase.dex
+│   │   │   │   │                       │   │   └── presentacion
+│   │   │   │   │                       │   │       ├── screens
+│   │   │   │   │                       │   │       │   └── DescripcionDispositivoUIState.dex
+│   │   │   │   │                       │   │       └── viewmodels
+│   │   │   │   │                       │   │           ├── DescripcionDispositivoViewModel.dex
+│   │   │   │   │                       │   │           └── DescripcionDispositivoViewModelFactory.dex
+│   │   │   │   │                       │   ├── editardispositivo
+│   │   │   │   │                       │   │   ├── data
+│   │   │   │   │                       │   │   │   ├── datasource
+│   │   │   │   │                       │   │   │   │   ├── api
+│   │   │   │   │                       │   │   │   │   │   └── JsonPlaceHolderEditarDispositivoApi.dex
+│   │   │   │   │                       │   │   │   │   └── models
+│   │   │   │   │                       │   │   │   │       └── EditarDispositivoDto.dex
+│   │   │   │   │                       │   │   │   └── repositories
+│   │   │   │   │                       │   │   │       └── EditarDispositivoImpl.dex
+│   │   │   │   │                       │   │   ├── di
+│   │   │   │   │                       │   │   │   └── EditarDispositivoProvider.dex
+│   │   │   │   │                       │   │   ├── domain
+│   │   │   │   │                       │   │   │   ├── entities
+│   │   │   │   │                       │   │   │   │   └── EditarDispositivo.dex
+│   │   │   │   │                       │   │   │   ├── repositories
+│   │   │   │   │                       │   │   │   │   └── EditarDisposivoRepository.dex
+│   │   │   │   │                       │   │   │   └── usescases
+│   │   │   │   │                       │   │   │       └── PutEditarDispositivoUseCase.dex
+│   │   │   │   │                       │   │   └── presentacion
+│   │   │   │   │                       │   │       ├── screens
+│   │   │   │   │                       │   │       │   └── EditarDispositivoUIState.dex
+│   │   │   │   │                       │   │       └── viewmodels
+│   │   │   │   │                       │   │           ├── EditarDispositivoViewModel.dex
+│   │   │   │   │                       │   │           └── EditarDispositivoViewModelFactory.dex
+│   │   │   │   │                       │   ├── eliminardispositivo
+│   │   │   │   │                       │   │   ├── data
+│   │   │   │   │                       │   │   │   ├── datasource
+│   │   │   │   │                       │   │   │   │   ├── api
+│   │   │   │   │                       │   │   │   │   │   └── JsonPlaceHolderEliminarDispositivoApi.dex
+│   │   │   │   │                       │   │   │   │   ├── mapper
+│   │   │   │   │                       │   │   │   │   │   └── EliminarDispositivoMapper.dex
+│   │   │   │   │                       │   │   │   │   └── models
+│   │   │   │   │                       │   │   │   │       └── EliminarDispositivoDto.dex
+│   │   │   │   │                       │   │   │   └── repositories
+│   │   │   │   │                       │   │   │       └── EliminarDispositivoRepositoryImpl.dex
+│   │   │   │   │                       │   │   ├── di
+│   │   │   │   │                       │   │   │   └── EliminarDispositivoProvider.dex
+│   │   │   │   │                       │   │   ├── domain
+│   │   │   │   │                       │   │   │   ├── entities
+│   │   │   │   │                       │   │   │   │   └── EliminarDispositivo.dex
+│   │   │   │   │                       │   │   │   ├── repositories
+│   │   │   │   │                       │   │   │   │   └── EliminarDispositivoRepository.dex
+│   │   │   │   │                       │   │   │   └── usescases
+│   │   │   │   │                       │   │   │       └── DeleteEliminarDispositivoUseCase.dex
+│   │   │   │   │                       │   │   └── presentacion
+│   │   │   │   │                       │   │       ├── screens
+│   │   │   │   │                       │   │       │   └── EliminarDispositivoUIState.dex
+│   │   │   │   │                       │   │       └── viewmodels
+│   │   │   │   │                       │   │           ├── EliminarDispositivoViewModel.dex
+│   │   │   │   │                       │   │           └── EliminarDispositivoViewModelFactory.dex
+│   │   │   │   │                       │   ├── inventario
+│   │   │   │   │                       │   │   ├── data
+│   │   │   │   │                       │   │   │   ├── datasource
+│   │   │   │   │                       │   │   │   │   ├── api
+│   │   │   │   │                       │   │   │   │   │   └── JsonPlaceHolderInventarioApi.dex
+│   │   │   │   │                       │   │   │   │   └── models
+│   │   │   │   │                       │   │   │   │       └── InventarioDto.dex
+│   │   │   │   │                       │   │   │   └── repositories
+│   │   │   │   │                       │   │   │       └── InventarioRepositoryImpl.dex
+│   │   │   │   │                       │   │   ├── di
+│   │   │   │   │                       │   │   │   └── InventarioProvider.dex
+│   │   │   │   │                       │   │   ├── domain
+│   │   │   │   │                       │   │   │   ├── entities
+│   │   │   │   │                       │   │   │   │   └── Inventario.dex
+│   │   │   │   │                       │   │   │   ├── repositories
+│   │   │   │   │                       │   │   │   │   └── InventarioRepository.dex
+│   │   │   │   │                       │   │   │   └── usescases
+│   │   │   │   │                       │   │   │       └── GetInventarioUseCase.dex
+│   │   │   │   │                       │   │   └── presentacion
+│   │   │   │   │                       │   │       ├── screens
+│   │   │   │   │                       │   │       │   └── InventarioUIState.dex
+│   │   │   │   │                       │   │       └── viewmodels
+│   │   │   │   │                       │   │           ├── InventarioViewModel.dex
+│   │   │   │   │                       │   │           └── InventarioViewModelFactory.dex
+│   │   │   │   │                       │   ├── login
+│   │   │   │   │                       │   │   ├── data
+│   │   │   │   │                       │   │   │   ├── datasource
+│   │   │   │   │                       │   │   │   │   ├── api
+│   │   │   │   │                       │   │   │   │   │   └── JsonPlaceHolderLoginApi.dex
+│   │   │   │   │                       │   │   │   │   ├── mapper
+│   │   │   │   │                       │   │   │   │   │   └── LoginMapperKt.dex
+│   │   │   │   │                       │   │   │   │   └── models
+│   │   │   │   │                       │   │   │   │       └── LoginDto.dex
+│   │   │   │   │                       │   │   │   └── repositories
+│   │   │   │   │                       │   │   │       ├── LoginRepositoryImpl$login$1.dex
+│   │   │   │   │                       │   │   │       └── LoginRepositoryImpl.dex
+│   │   │   │   │                       │   │   ├── di
+│   │   │   │   │                       │   │   │   └── LoginProvider.dex
+│   │   │   │   │                       │   │   ├── domain
+│   │   │   │   │                       │   │   │   ├── entities
+│   │   │   │   │                       │   │   │   │   └── Login.dex
+│   │   │   │   │                       │   │   │   ├── repositories
+│   │   │   │   │                       │   │   │   │   └── LoginRepository.dex
+│   │   │   │   │                       │   │   │   └── usescases
+│   │   │   │   │                       │   │   │       └── PostLoginUseCase.dex
+│   │   │   │   │                       │   │   └── presentation
+│   │   │   │   │                       │   │       ├── screens
+│   │   │   │   │                       │   │       │   ├── ComposableSingletons$LoginSceenKt.dex
+│   │   │   │   │                       │   │       │   ├── LoginSceenKt.dex
+│   │   │   │   │                       │   │       │   └── LoginUIState.dex
+│   │   │   │   │                       │   │       └── viewmodels
+│   │   │   │   │                       │   │           ├── LoginViewModel$login$1.dex
+│   │   │   │   │                       │   │           ├── LoginViewModel.dex
+│   │   │   │   │                       │   │           └── LoginViewModelFactory.dex
+│   │   │   │   │                       │   └── nuevodispositivo
+│   │   │   │   │                       │       ├── data
+│   │   │   │   │                       │       │   ├── datasource
+│   │   │   │   │                       │       │   │   ├── api
+│   │   │   │   │                       │       │   │   │   └── JsonPlaceHolderNuevoDispositivoApi.dex
+│   │   │   │   │                       │       │   │   └── models
+│   │   │   │   │                       │       │   │       └── NuevoDispositivoDto.dex
+│   │   │   │   │                       │       │   └── repositories
+│   │   │   │   │                       │       │       └── NuevoDispositivoRepositoryImpl.dex
+│   │   │   │   │                       │       ├── di
+│   │   │   │   │                       │       │   └── NuevoDispositivoProvider.dex
+│   │   │   │   │                       │       ├── domain
+│   │   │   │   │                       │       │   ├── entities
+│   │   │   │   │                       │       │   │   └── NuevoDispositivo.dex
+│   │   │   │   │                       │       │   ├── repositories
+│   │   │   │   │                       │       │   │   └── NuevoDispositivoRepository.dex
+│   │   │   │   │                       │       │   └── usescases
+│   │   │   │   │                       │       │       └── PostNuevoDispositivoUseCase.dex
+│   │   │   │   │                       │       └── presentacion
+│   │   │   │   │                       │           ├── screens
+│   │   │   │   │                       │           │   └── NuevoDispositivoUIState.dex
+│   │   │   │   │                       │           └── viewmodels
+│   │   │   │   │                       │               ├── NuevoDispositivoViewModel.dex
+│   │   │   │   │                       │               └── NuevoDispositivoViewModelFactory.dex
+│   │   │   │   │                       ├── feautures
+│   │   │   │   │                       │   ├── descripciondispositivo
+│   │   │   │   │                       │   │   ├── data
+│   │   │   │   │                       │   │   │   ├── datasource
+│   │   │   │   │                       │   │   │   │   ├── api
+│   │   │   │   │                       │   │   │   │   └── models
+│   │   │   │   │                       │   │   │   └── repositories
+│   │   │   │   │                       │   │   ├── di
+│   │   │   │   │                       │   │   ├── domain
+│   │   │   │   │                       │   │   │   ├── entities
+│   │   │   │   │                       │   │   │   ├── repositories
+│   │   │   │   │                       │   │   │   └── usescases
+│   │   │   │   │                       │   │   └── presentacion
+│   │   │   │   │                       │   │       ├── screens
+│   │   │   │   │                       │   │       └── viewmodels
+│   │   │   │   │                       │   ├── editardispositivo
+│   │   │   │   │                       │   │   ├── data
+│   │   │   │   │                       │   │   │   ├── datasource
+│   │   │   │   │                       │   │   │   │   ├── api
+│   │   │   │   │                       │   │   │   │   └── models
+│   │   │   │   │                       │   │   │   └── repositories
+│   │   │   │   │                       │   │   ├── di
+│   │   │   │   │                       │   │   ├── domain
+│   │   │   │   │                       │   │   │   ├── entities
+│   │   │   │   │                       │   │   │   ├── repositories
+│   │   │   │   │                       │   │   │   └── usescases
+│   │   │   │   │                       │   │   └── presentacion
+│   │   │   │   │                       │   │       ├── screens
+│   │   │   │   │                       │   │       └── viewmodels
+│   │   │   │   │                       │   ├── eliminardispositivo
+│   │   │   │   │                       │   │   ├── data
+│   │   │   │   │                       │   │   │   ├── datasource
+│   │   │   │   │                       │   │   │   │   ├── api
+│   │   │   │   │                       │   │   │   │   ├── mapper
+│   │   │   │   │                       │   │   │   │   └── models
+│   │   │   │   │                       │   │   │   └── repositories
+│   │   │   │   │                       │   │   ├── di
+│   │   │   │   │                       │   │   ├── domain
+│   │   │   │   │                       │   │   │   ├── entities
+│   │   │   │   │                       │   │   │   ├── repositories
+│   │   │   │   │                       │   │   │   └── usescases
+│   │   │   │   │                       │   │   └── presentacion
+│   │   │   │   │                       │   │       ├── screens
+│   │   │   │   │                       │   │       └── viewmodels
+│   │   │   │   │                       │   ├── inventario
+│   │   │   │   │                       │   │   ├── data
+│   │   │   │   │                       │   │   │   ├── datasource
+│   │   │   │   │                       │   │   │   │   ├── api
+│   │   │   │   │                       │   │   │   │   └── models
+│   │   │   │   │                       │   │   │   └── repositories
+│   │   │   │   │                       │   │   ├── di
+│   │   │   │   │                       │   │   ├── domain
+│   │   │   │   │                       │   │   │   ├── entities
+│   │   │   │   │                       │   │   │   ├── repositories
+│   │   │   │   │                       │   │   │   └── usescases
+│   │   │   │   │                       │   │   └── presentacion
+│   │   │   │   │                       │   │       ├── screens
+│   │   │   │   │                       │   │       └── viewmodels
+│   │   │   │   │                       │   ├── login
+│   │   │   │   │                       │   │   ├── data
+│   │   │   │   │                       │   │   │   └── datasource
+│   │   │   │   │                       │   │   │       ├── api
+│   │   │   │   │                       │   │   │       ├── mapper
+│   │   │   │   │                       │   │   │       └── models
+│   │   │   │   │                       │   │   ├── di
+│   │   │   │   │                       │   │   ├── domain
+│   │   │   │   │                       │   │   │   ├── entities
+│   │   │   │   │                       │   │   │   ├── repositories
+│   │   │   │   │                       │   │   │   └── usescases
+│   │   │   │   │                       │   │   └── presentation
+│   │   │   │   │                       │   │       ├── screens
+│   │   │   │   │                       │   │       └── viewmodels
+│   │   │   │   │                       │   └── nuevodispositivo
+│   │   │   │   │                       │       ├── data
+│   │   │   │   │                       │       │   ├── datasource
+│   │   │   │   │                       │       │   │   ├── api
+│   │   │   │   │                       │       │   │   └── models
+│   │   │   │   │                       │       │   └── repositories
+│   │   │   │   │                       │       ├── di
+│   │   │   │   │                       │       ├── domain
+│   │   │   │   │                       │       │   ├── entities
+│   │   │   │   │                       │       │   ├── repositories
+│   │   │   │   │                       │       │   └── usescases
+│   │   │   │   │                       │       └── presentacion
+│   │   │   │   │                       │           ├── screens
+│   │   │   │   │                       │           └── viewmodels
+│   │   │   │   │                       ├── MainActivity.dex
+│   │   │   │   │                       └── ui
+│   │   │   │   │                           └── theme
+│   │   │   │   │                               ├── ColorKt.dex
+│   │   │   │   │                               ├── ThemeKt.dex
+│   │   │   │   │                               └── TypeKt.dex
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── dexBuilderDebugAndroidTest
+│   │   │   │           └── out
+│   │   │   │               ├── com
+│   │   │   │               │   └── williamsel
+│   │   │   │               │       └── labkeep
+│   │   │   │               │           └── ExampleInstrumentedTest.dex
+│   │   │   │               ├── f8a410ec78da55c1855dedf8b33f60d3fbd1d6044443ed300b46f2f3eeaa9bed_1.jar
+│   │   │   │               ├── f8a410ec78da55c1855dedf8b33f60d3fbd1d6044443ed300b46f2f3eeaa9bed_3.jar
+│   │   │   │               ├── f8a410ec78da55c1855dedf8b33f60d3fbd1d6044443ed300b46f2f3eeaa9bed_5.jar
+│   │   │   │               ├── f8a410ec78da55c1855dedf8b33f60d3fbd1d6044443ed300b46f2f3eeaa9bed_6.jar
+│   │   │   │               └── f8a410ec78da55c1855dedf8b33f60d3fbd1d6044443ed300b46f2f3eeaa9bed_7.jar
+│   │   │   ├── runtime_symbol_list
+│   │   │   │   ├── debug
+│   │   │   │   │   └── processDebugResources
+│   │   │   │   │       └── R.txt
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── processDebugAndroidTestResources
+│   │   │   │           └── R.txt
+│   │   │   ├── signing_config_versions
+│   │   │   │   ├── debug
+│   │   │   │   │   └── writeDebugSigningConfigVersions
+│   │   │   │   │       └── signing-config-versions.json
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── writeDebugAndroidTestSigningConfigVersions
+│   │   │   │           └── signing-config-versions.json
+│   │   │   ├── stable_resource_ids_file
+│   │   │   │   ├── debug
+│   │   │   │   │   └── processDebugResources
+│   │   │   │   │       └── stableIds.txt
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── processDebugAndroidTestResources
+│   │   │   │           └── stableIds.txt
+│   │   │   ├── stripped_native_libs
+│   │   │   │   └── debug
+│   │   │   │       └── stripDebugDebugSymbols
+│   │   │   │           └── out
+│   │   │   │               └── lib
+│   │   │   │                   ├── arm64-v8a
+│   │   │   │                   │   └── libandroidx.graphics.path.so
+│   │   │   │                   ├── armeabi-v7a
+│   │   │   │                   │   └── libandroidx.graphics.path.so
+│   │   │   │                   ├── x86
+│   │   │   │                   │   └── libandroidx.graphics.path.so
+│   │   │   │                   └── x86_64
+│   │   │   │                       └── libandroidx.graphics.path.so
+│   │   │   ├── sub_project_dex_archive
+│   │   │   │   ├── debug
+│   │   │   │   │   └── dexBuilderDebug
+│   │   │   │   │       └── out
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── dexBuilderDebugAndroidTest
+│   │   │   │           └── out
+│   │   │   ├── symbol_list_with_package_name
+│   │   │   │   ├── debug
+│   │   │   │   │   └── generateDebugRFile
+│   │   │   │   │       └── package-aware-r.txt
+│   │   │   │   └── debugAndroidTest
+│   │   │   │       └── generateDebugAndroidTestRFile
+│   │   │   │           └── package-aware-r.txt
+│   │   │   ├── tmp
+│   │   │   │   └── manifest
+│   │   │   │       └── androidTest
+│   │   │   │           └── debug
+│   │   │   └── validate_signing_config
+│   │   │       ├── debug
+│   │   │       │   └── validateSigningDebug
+│   │   │       └── debugAndroidTest
+│   │   │           └── validateSigningDebugAndroidTest
+│   │   ├── kotlin
+│   │   │   ├── compileDebugAndroidTestKotlin
+│   │   │   │   ├── cacheable
+│   │   │   │   │   ├── caches-jvm
+│   │   │   │   │   │   ├── inputs
+│   │   │   │   │   │   │   ├── source-to-output.tab
+│   │   │   │   │   │   │   ├── source-to-output.tab_i
+│   │   │   │   │   │   │   ├── source-to-output.tab_i.len
+│   │   │   │   │   │   │   ├── source-to-output.tab.keystream
+│   │   │   │   │   │   │   ├── source-to-output.tab.keystream.len
+│   │   │   │   │   │   │   ├── source-to-output.tab.len
+│   │   │   │   │   │   │   └── source-to-output.tab.values.at
+│   │   │   │   │   │   ├── jvm
+│   │   │   │   │   │   │   └── kotlin
+│   │   │   │   │   │   │       ├── class-attributes.tab
+│   │   │   │   │   │   │       ├── class-attributes.tab_i
+│   │   │   │   │   │   │       ├── class-attributes.tab_i.len
+│   │   │   │   │   │   │       ├── class-attributes.tab.keystream
+│   │   │   │   │   │   │       ├── class-attributes.tab.keystream.len
+│   │   │   │   │   │   │       ├── class-attributes.tab.len
+│   │   │   │   │   │   │       ├── class-attributes.tab.values.at
+│   │   │   │   │   │   │       ├── class-fq-name-to-source.tab
+│   │   │   │   │   │   │       ├── class-fq-name-to-source.tab_i
+│   │   │   │   │   │   │       ├── class-fq-name-to-source.tab_i.len
+│   │   │   │   │   │   │       ├── class-fq-name-to-source.tab.keystream
+│   │   │   │   │   │   │       ├── class-fq-name-to-source.tab.keystream.len
+│   │   │   │   │   │   │       ├── class-fq-name-to-source.tab.len
+│   │   │   │   │   │   │       ├── class-fq-name-to-source.tab.values.at
+│   │   │   │   │   │   │       ├── internal-name-to-source.tab
+│   │   │   │   │   │   │       ├── internal-name-to-source.tab_i
+│   │   │   │   │   │   │       ├── internal-name-to-source.tab_i.len
+│   │   │   │   │   │   │       ├── internal-name-to-source.tab.keystream
+│   │   │   │   │   │   │       ├── internal-name-to-source.tab.keystream.len
+│   │   │   │   │   │   │       ├── internal-name-to-source.tab.len
+│   │   │   │   │   │   │       ├── internal-name-to-source.tab.values.at
+│   │   │   │   │   │   │       ├── proto.tab
+│   │   │   │   │   │   │       ├── proto.tab_i
+│   │   │   │   │   │   │       ├── proto.tab_i.len
+│   │   │   │   │   │   │       ├── proto.tab.keystream
+│   │   │   │   │   │   │       ├── proto.tab.keystream.len
+│   │   │   │   │   │   │       ├── proto.tab.len
+│   │   │   │   │   │   │       ├── proto.tab.values.at
+│   │   │   │   │   │   │       ├── source-to-classes.tab
+│   │   │   │   │   │   │       ├── source-to-classes.tab_i
+│   │   │   │   │   │   │       ├── source-to-classes.tab_i.len
+│   │   │   │   │   │   │       ├── source-to-classes.tab.keystream
+│   │   │   │   │   │   │       ├── source-to-classes.tab.keystream.len
+│   │   │   │   │   │   │       ├── source-to-classes.tab.len
+│   │   │   │   │   │   │       └── source-to-classes.tab.values.at
+│   │   │   │   │   │   └── lookups
+│   │   │   │   │   │       ├── counters.tab
+│   │   │   │   │   │       ├── file-to-id.tab
+│   │   │   │   │   │       ├── file-to-id.tab_i
+│   │   │   │   │   │       ├── file-to-id.tab_i.len
+│   │   │   │   │   │       ├── file-to-id.tab.keystream
+│   │   │   │   │   │       ├── file-to-id.tab.keystream.len
+│   │   │   │   │   │       ├── file-to-id.tab.len
+│   │   │   │   │   │       ├── file-to-id.tab.values.at
+│   │   │   │   │   │       ├── id-to-file.tab
+│   │   │   │   │   │       ├── id-to-file.tab_i.len
+│   │   │   │   │   │       ├── id-to-file.tab.keystream
+│   │   │   │   │   │       ├── id-to-file.tab.keystream.len
+│   │   │   │   │   │       ├── id-to-file.tab.len
+│   │   │   │   │   │       ├── id-to-file.tab.values.at
+│   │   │   │   │   │       ├── lookups.tab
+│   │   │   │   │   │       ├── lookups.tab_i
+│   │   │   │   │   │       ├── lookups.tab_i.len
+│   │   │   │   │   │       ├── lookups.tab.keystream
+│   │   │   │   │   │       ├── lookups.tab.keystream.len
+│   │   │   │   │   │       ├── lookups.tab.len
+│   │   │   │   │   │       └── lookups.tab.values.at
+│   │   │   │   │   └── last-build.bin
+│   │   │   │   ├── classpath-snapshot
+│   │   │   │   │   └── shrunk-classpath-snapshot.bin
+│   │   │   │   └── local-state
+│   │   │   └── compileDebugKotlin
+│   │   │       ├── cacheable
+│   │   │       │   ├── caches-jvm
+│   │   │       │   │   ├── inputs
+│   │   │       │   │   │   ├── source-to-output.tab
+│   │   │       │   │   │   ├── source-to-output.tab_i
+│   │   │       │   │   │   ├── source-to-output.tab_i.len
+│   │   │       │   │   │   ├── source-to-output.tab.keystream
+│   │   │       │   │   │   ├── source-to-output.tab.keystream.len
+│   │   │       │   │   │   ├── source-to-output.tab.len
+│   │   │       │   │   │   ├── source-to-output.tab.values
+│   │   │       │   │   │   ├── source-to-output.tab.values.at
+│   │   │       │   │   │   └── source-to-output.tab.values.s
+│   │   │       │   │   ├── jvm
+│   │   │       │   │   │   └── kotlin
+│   │   │       │   │   │       ├── class-attributes.tab
+│   │   │       │   │   │       ├── class-attributes.tab_i
+│   │   │       │   │   │       ├── class-attributes.tab_i.len
+│   │   │       │   │   │       ├── class-attributes.tab.keystream
+│   │   │       │   │   │       ├── class-attributes.tab.keystream.len
+│   │   │       │   │   │       ├── class-attributes.tab.len
+│   │   │       │   │   │       ├── class-attributes.tab.values.at
+│   │   │       │   │   │       ├── class-fq-name-to-source.tab
+│   │   │       │   │   │       ├── class-fq-name-to-source.tab_i
+│   │   │       │   │   │       ├── class-fq-name-to-source.tab_i.len
+│   │   │       │   │   │       ├── class-fq-name-to-source.tab.keystream
+│   │   │       │   │   │       ├── class-fq-name-to-source.tab.keystream.len
+│   │   │       │   │   │       ├── class-fq-name-to-source.tab.len
+│   │   │       │   │   │       ├── class-fq-name-to-source.tab.values.at
+│   │   │       │   │   │       ├── internal-name-to-source.tab
+│   │   │       │   │   │       ├── internal-name-to-source.tab_i
+│   │   │       │   │   │       ├── internal-name-to-source.tab_i.len
+│   │   │       │   │   │       ├── internal-name-to-source.tab.keystream
+│   │   │       │   │   │       ├── internal-name-to-source.tab.keystream.len
+│   │   │       │   │   │       ├── internal-name-to-source.tab.len
+│   │   │       │   │   │       ├── internal-name-to-source.tab.values.at
+│   │   │       │   │   │       ├── package-parts.tab
+│   │   │       │   │   │       ├── package-parts.tab_i
+│   │   │       │   │   │       ├── package-parts.tab_i.len
+│   │   │       │   │   │       ├── package-parts.tab.keystream
+│   │   │       │   │   │       ├── package-parts.tab.keystream.len
+│   │   │       │   │   │       ├── package-parts.tab.len
+│   │   │       │   │   │       ├── package-parts.tab.values.at
+│   │   │       │   │   │       ├── proto.tab
+│   │   │       │   │   │       ├── proto.tab_i
+│   │   │       │   │   │       ├── proto.tab_i.len
+│   │   │       │   │   │       ├── proto.tab.keystream
+│   │   │       │   │   │       ├── proto.tab.keystream.len
+│   │   │       │   │   │       ├── proto.tab.len
+│   │   │       │   │   │       ├── proto.tab.values.at
+│   │   │       │   │   │       ├── source-to-classes.tab
+│   │   │       │   │   │       ├── source-to-classes.tab_i
+│   │   │       │   │   │       ├── source-to-classes.tab_i.len
+│   │   │       │   │   │       ├── source-to-classes.tab.keystream
+│   │   │       │   │   │       ├── source-to-classes.tab.keystream.len
+│   │   │       │   │   │       ├── source-to-classes.tab.len
+│   │   │       │   │   │       ├── source-to-classes.tab.values.at
+│   │   │       │   │   │       ├── subtypes.tab
+│   │   │       │   │   │       ├── subtypes.tab_i
+│   │   │       │   │   │       ├── subtypes.tab_i.len
+│   │   │       │   │   │       ├── subtypes.tab.keystream
+│   │   │       │   │   │       ├── subtypes.tab.keystream.len
+│   │   │       │   │   │       ├── subtypes.tab.len
+│   │   │       │   │   │       ├── subtypes.tab.values.at
+│   │   │       │   │   │       ├── supertypes.tab
+│   │   │       │   │   │       ├── supertypes.tab_i
+│   │   │       │   │   │       ├── supertypes.tab_i.len
+│   │   │       │   │   │       ├── supertypes.tab.keystream
+│   │   │       │   │   │       ├── supertypes.tab.keystream.len
+│   │   │       │   │   │       ├── supertypes.tab.len
+│   │   │       │   │   │       └── supertypes.tab.values.at
+│   │   │       │   │   └── lookups
+│   │   │       │   │       ├── counters.tab
+│   │   │       │   │       ├── file-to-id.tab
+│   │   │       │   │       ├── file-to-id.tab_i
+│   │   │       │   │       ├── file-to-id.tab_i.len
+│   │   │       │   │       ├── file-to-id.tab.keystream
+│   │   │       │   │       ├── file-to-id.tab.keystream.len
+│   │   │       │   │       ├── file-to-id.tab.len
+│   │   │       │   │       ├── file-to-id.tab.values.at
+│   │   │       │   │       ├── id-to-file.tab
+│   │   │       │   │       ├── id-to-file.tab_i
+│   │   │       │   │       ├── id-to-file.tab_i.len
+│   │   │       │   │       ├── id-to-file.tab.keystream
+│   │   │       │   │       ├── id-to-file.tab.keystream.len
+│   │   │       │   │       ├── id-to-file.tab.len
+│   │   │       │   │       ├── id-to-file.tab.values.at
+│   │   │       │   │       ├── lookups.tab
+│   │   │       │   │       ├── lookups.tab_i
+│   │   │       │   │       ├── lookups.tab_i.len
+│   │   │       │   │       ├── lookups.tab.keystream
+│   │   │       │   │       ├── lookups.tab.keystream.len
+│   │   │       │   │       ├── lookups.tab.len
+│   │   │       │   │       └── lookups.tab.values.at
+│   │   │       │   └── last-build.bin
+│   │   │       ├── classpath-snapshot
+│   │   │       │   └── shrunk-classpath-snapshot.bin
+│   │   │       └── local-state
+│   │   └── outputs
+│   │       └── logs
+│   │           └── manifest-merger-debug-report.txt
+│   ├── build.gradle.kts
+│   ├── proguard-rules.pro
+│   └── src
+│       ├── androidTest
+│       │   └── java
+│       │       └── com
+│       │           └── williamsel
+│       │               └── labkeep
+│       │                   └── ExampleInstrumentedTest.kt
+│       ├── main
+│       │   ├── AndroidManifest.xml
+│       │   ├── java
+│       │   │   └── com
+│       │   │       └── williamsel
+│       │   │           └── labkeep
+│       │   │               ├── core
+│       │   │               │   ├── network
+│       │   │               │   │   └── RetrofitClient.kt
+│       │   │               │   └── utils
+│       │   │               ├── features
+│       │   │               │   ├── descripciondispositivo
+│       │   │               │   │   ├── data
+│       │   │               │   │   │   ├── datasource
+│       │   │               │   │   │   │   ├── api
+│       │   │               │   │   │   │   │   └── JsonPlaceHolderDescripcionDispositivoApi.kt
+│       │   │               │   │   │   │   ├── mapper
+│       │   │               │   │   │   │   │   └── DescripcionDispositivoMapper.kt
+│       │   │               │   │   │   │   └── models
+│       │   │               │   │   │   │       └── DescripcionDispositivoDto.kt
+│       │   │               │   │   │   └── repositories
+│       │   │               │   │   │       └── DescripcionDispositivoImpl.kt
+│       │   │               │   │   ├── di
+│       │   │               │   │   │   └── DescripcionDispositivoProvider.kt
+│       │   │               │   │   ├── domain
+│       │   │               │   │   │   ├── entities
+│       │   │               │   │   │   │   └── DescripcionDispositivo.kt
+│       │   │               │   │   │   ├── repositories
+│       │   │               │   │   │   │   └── DescripcionDispositivoRepository.kt
+│       │   │               │   │   │   └── usescases
+│       │   │               │   │   │       └── GetIdDescripcionDispositivoUseCase.kt
+│       │   │               │   │   └── presentacion
+│       │   │               │   │       ├── components
+│       │   │               │   │       ├── screens
+│       │   │               │   │       │   ├── DescripcionDispositivoScreen.kt
+│       │   │               │   │       │   └── DescripcionDispositivoUIState.kt
+│       │   │               │   │       └── viewmodels
+│       │   │               │   │           ├── DescripcionDispositivoViewModelFactory.kt
+│       │   │               │   │           └── DescripcionDispositivoViewModel.kt
+│       │   │               │   ├── editardispositivo
+│       │   │               │   │   ├── data
+│       │   │               │   │   │   ├── datasource
+│       │   │               │   │   │   │   ├── api
+│       │   │               │   │   │   │   │   └── JsonPlaceHolderEditarDispositivoApi.kt
+│       │   │               │   │   │   │   ├── mapper
+│       │   │               │   │   │   │   │   └── EditarDispositivoMapper.kt
+│       │   │               │   │   │   │   └── models
+│       │   │               │   │   │   │       └── EditarDispositivoDto.kt
+│       │   │               │   │   │   └── repositories
+│       │   │               │   │   │       └── EditarDispositivoImpl.kt
+│       │   │               │   │   ├── di
+│       │   │               │   │   │   └── EditarDispositivoProvider.kt
+│       │   │               │   │   ├── domain
+│       │   │               │   │   │   ├── entities
+│       │   │               │   │   │   │   └── EditarDispositivo.kt
+│       │   │               │   │   │   ├── repositories
+│       │   │               │   │   │   │   └── EditarDisposivoRepository.kt
+│       │   │               │   │   │   └── usescases
+│       │   │               │   │   │       └── PutEditarDispositivoUseCase.kt
+│       │   │               │   │   └── presentacion
+│       │   │               │   │       ├── components
+│       │   │               │   │       ├── screens
+│       │   │               │   │       │   ├── EditarDispositivoScreen.kt
+│       │   │               │   │       │   └── EditarDispositivoUIState.kt
+│       │   │               │   │       └── viewmodels
+│       │   │               │   │           ├── EditarDispositivoViewModelFactory.kt
+│       │   │               │   │           └── EditarDispositivoViewModel.kt
+│       │   │               │   ├── eliminardispositivo
+│       │   │               │   │   ├── data
+│       │   │               │   │   │   ├── datasource
+│       │   │               │   │   │   │   ├── api
+│       │   │               │   │   │   │   │   └── JsonPlaceHolderEliminarDispositivoApi.kt
+│       │   │               │   │   │   │   ├── mapper
+│       │   │               │   │   │   │   │   └── EliminarDispositivoMapper.kt
+│       │   │               │   │   │   │   └── models
+│       │   │               │   │   │   │       └── EliminarDispositivoDto.kt
+│       │   │               │   │   │   └── repositories
+│       │   │               │   │   │       └── EliminarDispositivoRepositoryImpl.kt
+│       │   │               │   │   ├── di
+│       │   │               │   │   │   └── EliminarDispositivoProvider.kt
+│       │   │               │   │   ├── domain
+│       │   │               │   │   │   ├── entities
+│       │   │               │   │   │   │   └── EliminarDispositivo.kt
+│       │   │               │   │   │   ├── repositories
+│       │   │               │   │   │   │   └── EliminarDispositivoRepository.kt
+│       │   │               │   │   │   └── usescases
+│       │   │               │   │   │       └── DeleteEliminarDispositivoUseCase.kt
+│       │   │               │   │   └── presentacion
+│       │   │               │   │       ├── components
+│       │   │               │   │       ├── screens
+│       │   │               │   │       │   ├── EliminarDispositivoScreen.kt
+│       │   │               │   │       │   └── EliminarDispositivoUIState.kt
+│       │   │               │   │       └── viewmodels
+│       │   │               │   │           ├── EliminarDispositivoViewModelFactory.kt
+│       │   │               │   │           └── EliminarDispositivoViewModel.kt
+│       │   │               │   ├── inventario
+│       │   │               │   │   ├── data
+│       │   │               │   │   │   ├── datasource
+│       │   │               │   │   │   │   ├── api
+│       │   │               │   │   │   │   │   └── JsonPlaceHolderInventarioApi.kt
+│       │   │               │   │   │   │   ├── mapper
+│       │   │               │   │   │   │   │   └── InventarioMapper.kt
+│       │   │               │   │   │   │   └── models
+│       │   │               │   │   │   │       └── InventarioDto.kt
+│       │   │               │   │   │   └── repositories
+│       │   │               │   │   │       └── InventarioRepositoryImpl.kt
+│       │   │               │   │   ├── di
+│       │   │               │   │   │   └── InventarioProvider.kt
+│       │   │               │   │   ├── domain
+│       │   │               │   │   │   ├── entities
+│       │   │               │   │   │   │   └── Inventario.kt
+│       │   │               │   │   │   ├── repositories
+│       │   │               │   │   │   │   └── InventarioRepository.kt
+│       │   │               │   │   │   └── usescases
+│       │   │               │   │   │       └── GetInventarioUseCase.kt
+│       │   │               │   │   └── presentacion
+│       │   │               │   │       ├── components
+│       │   │               │   │       ├── screens
+│       │   │               │   │       │   ├── InventarioScreen.kt
+│       │   │               │   │       │   └── InventarioUIState.kt
+│       │   │               │   │       └── viewmodels
+│       │   │               │   │           ├── InventarioViewModelFactory.kt
+│       │   │               │   │           └── InventarioViewModel.kt
+│       │   │               │   ├── login
+│       │   │               │   │   ├── data
+│       │   │               │   │   │   ├── datasource
+│       │   │               │   │   │   │   ├── api
+│       │   │               │   │   │   │   │   └── JsonPlaceHolderLoginApi.kt
+│       │   │               │   │   │   │   ├── mapper
+│       │   │               │   │   │   │   │   └── LoginMapper.kt
+│       │   │               │   │   │   │   └── models
+│       │   │               │   │   │   │       └── LoginDto.kt
+│       │   │               │   │   │   └── repositories
+│       │   │               │   │   │       └── LoginRepositoryImpl.kt
+│       │   │               │   │   ├── di
+│       │   │               │   │   │   └── LoginProvider.kt
+│       │   │               │   │   ├── domain
+│       │   │               │   │   │   ├── entities
+│       │   │               │   │   │   │   └── Login.kt
+│       │   │               │   │   │   ├── repositories
+│       │   │               │   │   │   │   └── LoginRepository.kt
+│       │   │               │   │   │   └── usescases
+│       │   │               │   │   │       └── PostLoginUseCase.kt
+│       │   │               │   │   └── presentation
+│       │   │               │   │       ├── components
+│       │   │               │   │       ├── screens
+│       │   │               │   │       │   ├── LoginSceen.kt
+│       │   │               │   │       │   └── LoginUIState.kt
+│       │   │               │   │       └── viewmodels
+│       │   │               │   │           ├── LoginViewModelFactory.kt
+│       │   │               │   │           └── LoginViewModel.kt
+│       │   │               │   └── nuevodispositivo
+│       │   │               │       ├── data
+│       │   │               │       │   ├── datasource
+│       │   │               │       │   │   ├── api
+│       │   │               │       │   │   │   └── JsonPlaceHolderNuevoDispositivoApi.kt
+│       │   │               │       │   │   ├── mapper
+│       │   │               │       │   │   │   └── NuevoDispositivoMapper.kt
+│       │   │               │       │   │   └── models
+│       │   │               │       │   │       └── NuevoDispositivoDto.kt
+│       │   │               │       │   └── repositories
+│       │   │               │       │       └── NuevoDispositivoRepositoryImpl.kt
+│       │   │               │       ├── di
+│       │   │               │       │   └── NuevoDispositivoProvider.kt
+│       │   │               │       ├── domain
+│       │   │               │       │   ├── entities
+│       │   │               │       │   │   └── NuevoDispositivo.kt
+│       │   │               │       │   ├── repositories
+│       │   │               │       │   │   └── NuevoDispositivoRepository.kt
+│       │   │               │       │   └── usescases
+│       │   │               │       │       └── PostNuevoDispositivoUseCase.kt
+│       │   │               │       └── presentacion
+│       │   │               │           ├── components
+│       │   │               │           ├── screens
+│       │   │               │           │   ├── NuevoDispositivoScreen.kt
+│       │   │               │           │   └── NuevoDispositivoUIState.kt
+│       │   │               │           └── viewmodels
+│       │   │               │               ├── NuevoDispositivoViewModelFactory.kt
+│       │   │               │               └── NuevoDispositivoViewModel.kt
+│       │   │               ├── MainActivity.kt
+│       │   │               └── ui
+│       │   │                   └── theme
+│       │   │                       ├── Color.kt
+│       │   │                       ├── Theme.kt
+│       │   │                       └── Type.kt
+│       │   └── res
+│       │       ├── drawable
+│       │       │   ├── ic_launcher_background.xml
+│       │       │   └── ic_launcher_foreground.xml
+│       │       ├── mipmap-anydpi-v26
+│       │       │   ├── ic_launcher_round.xml
+│       │       │   └── ic_launcher.xml
+│       │       ├── mipmap-hdpi
+│       │       │   ├── ic_launcher_round.webp
+│       │       │   └── ic_launcher.webp
+│       │       ├── mipmap-mdpi
+│       │       │   ├── ic_launcher_round.webp
+│       │       │   └── ic_launcher.webp
+│       │       ├── mipmap-xhdpi
+│       │       │   ├── ic_launcher_round.webp
+│       │       │   └── ic_launcher.webp
+│       │       ├── mipmap-xxhdpi
+│       │       │   ├── ic_launcher_round.webp
+│       │       │   └── ic_launcher.webp
+│       │       ├── mipmap-xxxhdpi
+│       │       │   ├── ic_launcher_round.webp
+│       │       │   └── ic_launcher.webp
+│       │       ├── values
+│       │       │   ├── colors.xml
+│       │       │   ├── strings.xml
+│       │       │   └── themes.xml
+│       │       └── xml
+│       │           ├── backup_rules.xml
+│       │           └── data_extraction_rules.xml
+│       └── test
+│           └── java
+│               └── com
+│                   └── williamsel
+│                       └── labkeep
+│                           └── ExampleUnitTest.kt
+├── build.gradle.kts
+├── estructura.txt
+├── gradle
+│   ├── gradle-daemon-jvm.properties
+│   ├── libs.versions.toml
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── local.properties
+└── settings.gradle.kts
+
+1318 directories, 1227 files

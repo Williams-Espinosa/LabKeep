@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+    id 'application'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    implementation ("io.javalin:javalin-bundle:6.6.0")
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'org.mindrot:jbcrypt:0.4'
+    implementation("org.postgresql:postgresql:42.7.3")
+    implementation('com.zaxxer:HikariCP:5.1.0')
+    implementation('io.github.cdimascio:dotenv-java:3.0.0')
+    implementation 'com.cloudinary:cloudinary-http5:2.2.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+shadowJar{
+    manifest {
+        attributes('Main-Class':'org.example.Main')
+    }
+}
+
+application {
+    mainClass = 'org.example.Main'
+}
