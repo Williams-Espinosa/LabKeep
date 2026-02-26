@@ -105,7 +105,7 @@ src/main/java/williamsel/
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/labkeep.git
+git clone https://github.com/Williams-Espinosa/labkeep.git
 cd labkeep
 ```
 
@@ -302,10 +302,13 @@ En `RetrofitClient.kt` apunta la `BASE_URL` a tu servidor:
 private const val BASE_URL = "http://TU_IP:7001/"
 ```
 
-> ⚠️ Si pruebas en emulador usa `10.0.2.2:7001`. Si usas dispositivo físico, usa la IP local de tu máquina.
+> ⚠️ Si pruebas en emulador usa `10.0.2.2:7001`. Si usas dispositivo físico, usa la IP local de tu máquina. ⚠️
 
 ---
 
 ## 📄 Licencia
 
 Este proyecto es de uso académico/personal.
+---
+> 💻 *"Codifica el futuro, crea el presente"*  
+> Desarrollado por **Williams-Espinosa** © 2026 — Todos los derechos reservados.
