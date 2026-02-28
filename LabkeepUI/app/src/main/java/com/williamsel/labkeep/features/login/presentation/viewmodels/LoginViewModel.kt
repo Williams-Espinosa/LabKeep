@@ -7,9 +7,11 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.williamsel.labkeep.features.login.domain.usescases.PostLoginUseCase
 import com.williamsel.labkeep.features.login.presentation.screens.LoginUIState
-import jakarta.inject.Inject
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
+@HiltViewModel
 class LoginViewModel @Inject constructor(
     private val loginUseCase: PostLoginUseCase
 ) : ViewModel() {
@@ -27,23 +29,12 @@ class LoginViewModel @Inject constructor(
 
     fun login() {
         viewModelScope.launch {
-
-            state = state.copy(
-                isLoading = true,
-                errorMessage = null
-            )
+            state = state.copy(isLoading = true, errorMessage = null)
             try {
                 loginUseCase(state.email, state.password)
-
-                state = state.copy(
-                    isLoading = false,
-                    isSuccess = true
-                )
+                state = state.copy(isLoading = false, isSuccess = true)
             } catch (e: Exception) {
-                state = state.copy(
-                    isLoading = false,
-                    errorMessage = "Credenciales incorrectas"
-                )
+                state = state.copy(isLoading = false, errorMessage = "Credenciales incorrectas")
             }
         }
     }

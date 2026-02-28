@@ -1,4 +1,8 @@
 package com.williamsel.labkeep.features.inventario.domain.entities
 
-class Inventario {
-}
+data class Inventario(
+    val id: Int,
+    val nombre: String,
+    val categoria: String,
+    val estado: String
+)

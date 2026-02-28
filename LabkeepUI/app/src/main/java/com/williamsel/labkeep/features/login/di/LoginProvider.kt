@@ -1,28 +1,33 @@
 package com.williamsel.labkeep.features.login.di
 
-import com.williamsel.labkeep.core.network.RetrofitClient
-import com.williamsel.labkeep.features.login.data.repositories.LoginRepositoryImpl
 import com.williamsel.labkeep.features.login.data.datasource.api.JsonPlaceHolderLoginApi
+import com.williamsel.labkeep.features.login.data.repositories.LoginRepositoryImpl
 import com.williamsel.labkeep.features.login.domain.repositories.LoginRepository
-import com.williamsel.labkeep.features.login.domain.usescases.PostLoginUseCase
+import dagger.Binds
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
+import retrofit2.Retrofit
+import javax.inject.Singleton
 
-class LoginProvider {
-    private val retrofit = RetrofitClient.retrofit
+@Module
+@InstallIn(SingletonComponent::class)
+object LoginModule {
 
-    private val apiService : JsonPlaceHolderLoginApi by lazy {
+    @Provides
+    @Singleton
+    fun provideLoginApi(retrofit: Retrofit): JsonPlaceHolderLoginApi =
         retrofit.create(JsonPlaceHolderLoginApi::class.java)
-    }
+}
 
-    private val myRepository : LoginRepository by lazy {
-        LoginRepositoryImpl(apiService)
-    }
+@Module
+@InstallIn(SingletonComponent::class)
+abstract class LoginBindsModule {
 
-    private val postLoginUseCase : PostLoginUseCase by lazy {
-        PostLoginUseCase(myRepository)
-    }
-
-    val loginViewModelFactory : LoginViewModelFactory by lazy {
-        LoginViewModelFactory(postLoginUseCase)
-
-    }
+    @Binds
+    @Singleton
+    abstract fun bindLoginRepository(
+        impl: LoginRepositoryImpl
+    ): LoginRepository
 }

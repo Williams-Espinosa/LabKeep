@@ -1,4 +1,8 @@
 package com.williamsel.labkeep.features.eliminardispositivo.data.datasource.models
 
-class EliminarDispositivoDto {
-}
+data class EliminarDispositivoDto(
+    val id: Int,
+    val nombre: String,
+    val categoria: String,
+    val estado: String
+)

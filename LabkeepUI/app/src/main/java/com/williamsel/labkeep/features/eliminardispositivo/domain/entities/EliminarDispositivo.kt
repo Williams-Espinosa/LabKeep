@@ -1,4 +1,8 @@
 package com.williamsel.labkeep.features.eliminardispositivo.domain.entities
 
-class EliminarDispositivo {
-}
+data class EliminarDispositivo(
+    val id: Int,
+    val nombre: String,
+    val categoria: String,
+    val estado: String
+)

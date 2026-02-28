@@ -6,9 +6,9 @@ import com.williamsel.labkeep.features.login.data.datasource.mapper.toDomain
 import com.williamsel.labkeep.features.login.data.datasource.models.LoginDto
 import com.williamsel.labkeep.features.login.domain.entities.Login
 import com.williamsel.labkeep.features.login.domain.repositories.LoginRepository
+import javax.inject.Inject
 
-
-class LoginRepositoryImpl(
+class LoginRepositoryImpl @Inject constructor(
     private val api: JsonPlaceHolderLoginApi
 ) : LoginRepository {
 

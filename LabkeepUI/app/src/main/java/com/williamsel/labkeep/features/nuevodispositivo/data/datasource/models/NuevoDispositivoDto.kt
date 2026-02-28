@@ -1,4 +1,6 @@
 package com.williamsel.labkeep.features.nuevodispositivo.data.datasource.models
 
-class NuevoDispositivoDto {
-}
+data class NuevoDispositivoDto(
+    val nombre: String,
+    val categoria: String
+)
