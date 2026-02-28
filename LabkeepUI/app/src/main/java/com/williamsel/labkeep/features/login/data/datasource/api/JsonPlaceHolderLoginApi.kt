@@ -5,8 +5,6 @@ import retrofit2.http.Body
 import retrofit2.http.POST
 
 interface JsonPlaceHolderLoginApi {
-    @POST("/login")
-    suspend fun login(@Body loginRequest: LoginDto): LoginDto
+    @POST("login")
+    suspend fun login(@Body body: LoginDto)
 }
-
-

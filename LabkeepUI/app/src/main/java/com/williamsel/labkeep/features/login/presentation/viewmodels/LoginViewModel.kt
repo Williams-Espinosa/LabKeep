@@ -19,23 +19,21 @@ class LoginViewModel @Inject constructor(
     var state by mutableStateOf(LoginUIState())
         private set
 
-    fun onEmailChange(email: String) {
-        state = state.copy(email = email)
+    fun onCorreoChange(correo: String) {
+        state = state.copy(correo = correo)
     }
 
-    fun onPasswordChange(password: String) {
-        state = state.copy(password = password)
+    fun onContrasenaChange(contrasena: String) {
+        state = state.copy(contrasena = contrasena)
     }
 
     fun login() {
         viewModelScope.launch {
             state = state.copy(isLoading = true, errorMessage = null)
-            try {
-                loginUseCase(state.email, state.password)
-                state = state.copy(isLoading = false, isSuccess = true)
-            } catch (e: Exception) {
-                state = state.copy(isLoading = false, errorMessage = "Credenciales incorrectas")
-            }
+            loginUseCase(state.correo, state.contrasena).fold(
+                onSuccess = { state = state.copy(isLoading = false, isSuccess = true) },
+                onFailure = { state = state.copy(isLoading = false, errorMessage = "Correo o contraseña incorrectos") }
+            )
         }
     }
 }

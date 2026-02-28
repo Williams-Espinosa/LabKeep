@@ -1,6 +1,7 @@
 package com.williamsel.labkeep.features.descripciondispositivo.data.datasource.api
 
 import com.williamsel.labkeep.features.descripciondispositivo.data.datasource.models.DescripcionDispositivoDto
+import com.williamsel.labkeep.features.descripciondispositivo.data.datasource.models.EstadoDto
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.PATCH
@@ -14,6 +15,6 @@ interface JsonPlaceHolderDescripcionDispositivoApi {
     @PATCH("dispositivos/{id}/estado")
     suspend fun cambiarEstado(
         @Path("id") id: Int,
-        @Body body: Map<String, String>
-    ): DescripcionDispositivoDto
+        @Body body: EstadoDto
+    ): Any
 }

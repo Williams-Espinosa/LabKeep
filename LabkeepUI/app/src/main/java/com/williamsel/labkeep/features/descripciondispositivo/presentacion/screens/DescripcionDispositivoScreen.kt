@@ -18,7 +18,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.layout.ContentScale
 import androidx.hilt.navigation.compose.hiltViewModel
+import coil.compose.AsyncImage
 import com.williamsel.labkeep.features.descripciondispositivo.presentacion.viewmodels.DescripcionDispositivoViewModel
 
 @Composable
@@ -40,7 +42,6 @@ fun DescripcionDispositivoScreen(
             .fillMaxSize()
             .background(Color(0xFF121212))
     ) {
-        // Top bar
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -49,29 +50,51 @@ fun DescripcionDispositivoScreen(
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             IconButton(onClick = onVolver) {
-                Icon(Icons.Default.ArrowBack, contentDescription = "Volver", tint = Color.White)
+                Icon(
+                    Icons.Default.ArrowBack,
+                    contentDescription = "Volver",
+                    tint = Color.White
+                )
             }
 
             Row {
                 IconButton(onClick = onEditar) {
-                    Icon(Icons.Default.Edit, contentDescription = "Editar", tint = Color.White)
+                    Icon(
+                        Icons.Default.Edit,
+                        contentDescription = "Editar",
+                        tint = Color.White
+                    )
                 }
                 IconButton(onClick = onEliminar) {
-                    Icon(Icons.Default.Delete, contentDescription = "Eliminar", tint = Color(0xFFE53935))
+                    Icon(
+                        Icons.Default.Delete,
+                        contentDescription = "Eliminar",
+                        tint = Color(0xFFE53935)
+                    )
                 }
             }
         }
 
         when {
             state.isLoading -> {
-                Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                Box(
+                    modifier = Modifier.fillMaxSize(),
+                    contentAlignment = Alignment.Center
+                ) {
                     CircularProgressIndicator(color = Color(0xFFE53935))
                 }
             }
 
             state.error != null -> {
-                Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                    Text(text = state.error!!, color = Color(0xFFE53935), fontSize = 14.sp)
+                Box(
+                    modifier = Modifier.fillMaxSize(),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = state.error!!,
+                        color = Color(0xFFE53935),
+                        fontSize = 14.sp
+                    )
                 }
             }
 
@@ -86,6 +109,7 @@ fun DescripcionDispositivoScreen(
                         .verticalScroll(rememberScrollState())
                         .padding(16.dp)
                 ) {
+
                     Box(
                         modifier = Modifier
                             .fillMaxWidth()
@@ -93,7 +117,18 @@ fun DescripcionDispositivoScreen(
                             .background(Color(0xFF1E1E1E), RoundedCornerShape(16.dp)),
                         contentAlignment = Alignment.Center
                     ) {
-                        Text("📷", fontSize = 48.sp)
+                        if (!dispositivo.imagenUrl.isNullOrBlank()) {
+                            AsyncImage(
+                                model = dispositivo.imagenUrl,
+                                contentDescription = dispositivo.nombre,
+                                contentScale = ContentScale.Crop,
+                                modifier = Modifier
+                                    .fillMaxSize()
+                                    .background(Color(0xFF1E1E1E), RoundedCornerShape(16.dp))
+                            )
+                        } else {
+                            Text("📷", fontSize = 48.sp)
+                        }
                     }
 
                     Spacer(modifier = Modifier.height(16.dp))
@@ -137,13 +172,13 @@ fun DescripcionDispositivoScreen(
                         }
                         Column {
                             Text(
-                                text = "REGISTRO",
+                                text = "FECHA REGISTRO",
                                 color = Color(0xFF9E9E9E),
                                 fontSize = 11.sp,
                                 fontWeight = FontWeight.SemiBold
                             )
                             Text(
-                                text = dispositivo.fechaRegistro,
+                                text = dispositivo.fechaCreacion,
                                 color = Color.White,
                                 fontSize = 14.sp
                             )
@@ -177,59 +212,6 @@ fun DescripcionDispositivoScreen(
                             )
                         }
                     }
-
-                    Spacer(modifier = Modifier.height(24.dp))
-
-                    Row(verticalAlignment = Alignment.CenterVertically) {
-                        Text(
-                            text = "📅",
-                            fontSize = 16.sp
-                        )
-                        Text(
-                            text = "  HISTORIAL DE ACTIVIDAD",
-                            color = Color(0xFF9E9E9E),
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.Bold
-                        )
-                    }
-
-                    Spacer(modifier = Modifier.height(12.dp))
-
-                    if (dispositivo.historial.isEmpty()) {
-                        Text(
-                            text = "Sin actividad registrada",
-                            color = Color(0xFF616161),
-                            fontSize = 13.sp
-                        )
-                    } else {
-                        Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                            dispositivo.historial.forEach { evento ->
-                                Row(verticalAlignment = Alignment.CenterVertically) {
-                                    Box(
-                                        modifier = Modifier
-                                            .size(8.dp)
-                                            .background(Color(0xFF424242), CircleShape)
-                                    )
-                                    Spacer(modifier = Modifier.width(10.dp))
-                                    Text(
-                                        text = evento,
-                                        color = Color(0xFF9E9E9E),
-                                        fontSize = 13.sp
-                                    )
-                                }
-                            }
-                        }
-                    }
-
-                    if (state.error != null) {
-                        Text(
-                            text = state.error!!,
-                            color = Color(0xFFE53935),
-                            fontSize = 13.sp,
-                            modifier = Modifier.padding(top = 12.dp)
-                        )
-                    }
-
                     Spacer(modifier = Modifier.height(24.dp))
                 }
             }

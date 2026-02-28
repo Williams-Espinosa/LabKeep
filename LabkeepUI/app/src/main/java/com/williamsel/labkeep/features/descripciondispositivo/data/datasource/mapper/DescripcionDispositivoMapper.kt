@@ -6,8 +6,15 @@ import com.williamsel.labkeep.features.descripciondispositivo.domain.entities.De
 fun DescripcionDispositivoDto.toDomain() = DescripcionDispositivo(
     id = id,
     nombre = nombre,
-    categoria = categoria,
+    categoria = categoriaNombre ?: "Sin categoría",
     estado = estado,
-    fechaRegistro = fechaRegistro,
-    historial = historial
+    imagenUrl = imagenUrl,
+    fechaCreacion = fechaCreacion?.let {
+        "%02d/%02d/%04d".format(
+            it.getOrElse(2) { 1 },
+            it.getOrElse(1) { 1 },
+            it.getOrElse(0) { 2026 }
+        )
+    } ?: "",
+    historial = emptyList()
 )

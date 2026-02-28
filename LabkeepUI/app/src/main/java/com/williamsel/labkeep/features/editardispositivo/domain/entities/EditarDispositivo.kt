@@ -4,5 +4,8 @@ data class EditarDispositivo(
     val id: Int,
     val nombre: String,
     val categoria: String,
-    val estado: String
+    val categoriaId: Int,
+    val estado: String,
+    val imagenUrl: String?,
+    val fechaCreacion: String?
 )

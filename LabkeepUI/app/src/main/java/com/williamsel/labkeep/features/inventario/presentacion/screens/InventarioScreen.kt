@@ -18,6 +18,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
+import androidx.lifecycle.compose.LocalLifecycleOwner
+import coil.compose.AsyncImage
 import com.williamsel.labkeep.features.inventario.domain.entities.Inventario
 import com.williamsel.labkeep.features.inventario.presentacion.viewmodels.InventarioViewModel
 
@@ -28,14 +32,30 @@ fun InventarioScreen(
     viewModel: InventarioViewModel = hiltViewModel()
 ) {
     val state by viewModel.uiState.collectAsState()
+    val lifecycleOwner = LocalLifecycleOwner.current
+
+    DisposableEffect(lifecycleOwner) {
+        val observer = LifecycleEventObserver { _, event ->
+            if (event == Lifecycle.Event.ON_RESUME) {
+                viewModel.cargarInventario()
+            }
+        }
+        lifecycleOwner.lifecycle.addObserver(observer)
+        onDispose {
+            lifecycleOwner.lifecycle.removeObserver(observer)
+        }
+    }
 
     Box(
         modifier = Modifier
             .fillMaxSize()
             .background(Color(0xFF121212))
     ) {
-        Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
-
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp)
+        ) {
             Text(
                 text = "Inventario",
                 color = Color.White,
@@ -49,18 +69,22 @@ fun InventarioScreen(
                 onValueChange = viewModel::onQueryChange,
                 placeholder = { Text("Buscar equipo o categoría...", color = Color(0xFF616161)) },
                 leadingIcon = {
-                    Icon(Icons.Default.Search, contentDescription = null, tint = Color(0xFF616161))
+                    Icon(
+                        Icons.Default.Search,
+                        contentDescription = null,
+                        tint = Color(0xFFFF9800)
+                    )
                 },
                 singleLine = true,
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(bottom = 16.dp),
                 colors = OutlinedTextFieldDefaults.colors(
-                    focusedBorderColor = Color(0xFFE53935),
+                    focusedBorderColor = Color(0xFFFF9800),
                     unfocusedBorderColor = Color(0xFF2C2C2C),
                     focusedTextColor = Color.White,
                     unfocusedTextColor = Color.White,
-                    cursorColor = Color(0xFFE53935),
+                    cursorColor = Color(0xFFFF9800),
                     unfocusedContainerColor = Color(0xFF1E1E1E),
                     focusedContainerColor = Color(0xFF1E1E1E)
                 ),
@@ -69,12 +93,19 @@ fun InventarioScreen(
 
             when {
                 state.isLoading -> {
-                    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                        CircularProgressIndicator(color = Color(0xFFE53935))
+                    Box(
+                        modifier = Modifier.fillMaxSize(),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        CircularProgressIndicator(color = Color(0xFFFF9800))
                     }
                 }
+
                 state.error != null -> {
-                    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                    Box(
+                        modifier = Modifier.fillMaxSize(),
+                        contentAlignment = Alignment.Center
+                    ) {
                         Column(horizontalAlignment = Alignment.CenterHorizontally) {
                             Text(
                                 text = state.error!!,
@@ -88,15 +119,20 @@ fun InventarioScreen(
                         }
                     }
                 }
+
                 state.dispositivosFiltrados.isEmpty() -> {
-                    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                    Box(
+                        modifier = Modifier.fillMaxSize(),
+                        contentAlignment = Alignment.Center
+                    ) {
                         Text(
                             text = "No se encontraron equipos",
-                            color = Color(0xFF616161),
+                            color = Color(0xFFFF9800),
                             fontSize = 14.sp
                         )
                     }
                 }
+
                 else -> {
                     LazyColumn(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                         items(state.dispositivosFiltrados) { dispositivo ->
@@ -110,7 +146,6 @@ fun InventarioScreen(
             }
         }
 
-        // FAB agregar
         FloatingActionButton(
             onClick = onAgregarClick,
             containerColor = Color.White,
@@ -154,7 +189,18 @@ private fun DispositivoItem(
                     .background(Color(0xFF2C2C2C), RoundedCornerShape(10.dp)),
                 contentAlignment = Alignment.Center
             ) {
-                Text("📷", fontSize = 20.sp)
+                if (!dispositivo.imagenUrl.isNullOrBlank()) {
+                    AsyncImage(
+                        model = dispositivo.imagenUrl,
+                        contentDescription = dispositivo.nombre,
+                        contentScale = androidx.compose.ui.layout.ContentScale.Crop,
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .background(Color(0xFF2C2C2C), RoundedCornerShape(10.dp))
+                    )
+                } else {
+                    Text("📷", fontSize = 20.sp)
+                }
             }
 
             Spacer(modifier = Modifier.width(14.dp))

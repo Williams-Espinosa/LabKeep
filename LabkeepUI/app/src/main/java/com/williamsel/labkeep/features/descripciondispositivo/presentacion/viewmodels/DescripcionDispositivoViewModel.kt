@@ -36,7 +36,7 @@ class DescripcionDispositivoViewModel @Inject constructor(
 
     fun toggleEstado() {
         val dispositivo = _uiState.value.dispositivo ?: return
-        val nuevoEstado = if (dispositivo.estado.uppercase() == "DISPONIBLE") "PRESTADO" else "DISPONIBLE"
+        val nuevoEstado = if (dispositivo.estado.lowercase() == "disponible") "prestado" else "disponible"
 
         viewModelScope.launch {
             _uiState.update { it.copy(isCambiandoEstado = true, error = null) }

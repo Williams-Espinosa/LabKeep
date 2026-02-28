@@ -5,10 +5,5 @@ import com.williamsel.labkeep.features.nuevodispositivo.domain.entities.NuevoDis
 
 fun NuevoDispositivoDto.toDomain() = NuevoDispositivo(
     nombre = nombre,
-    categoria = categoria
-)
-
-fun NuevoDispositivo.toDto() = NuevoDispositivoDto(
-    nombre = nombre,
-    categoria = categoria
+    categoriaId = categoriaId
 )

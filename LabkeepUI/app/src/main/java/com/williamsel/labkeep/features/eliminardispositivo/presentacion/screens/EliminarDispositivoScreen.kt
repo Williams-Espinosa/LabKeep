@@ -15,7 +15,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.layout.ContentScale
 import androidx.hilt.navigation.compose.hiltViewModel
+import coil.compose.AsyncImage
 import com.williamsel.labkeep.features.eliminardispositivo.presentacion.viewmodels.EliminarDispositivoViewModel
 
 @Composable
@@ -136,7 +138,18 @@ fun EliminarDispositivoScreen(
                                 .background(Color(0xFF2C2C2C), RoundedCornerShape(10.dp)),
                             contentAlignment = Alignment.Center
                         ) {
-                            Text("📷", fontSize = 20.sp)
+                            if (!dispositivo.imagenUrl.isNullOrBlank()) {
+                                AsyncImage(
+                                    model = dispositivo.imagenUrl,
+                                    contentDescription = dispositivo.nombre,
+                                    contentScale = ContentScale.Crop,
+                                    modifier = Modifier
+                                        .fillMaxSize()
+                                        .background(Color(0xFF2C2C2C), RoundedCornerShape(10.dp))
+                                )
+                            } else {
+                                Text("📷", fontSize = 20.sp)
+                            }
                         }
 
                         Spacer(modifier = Modifier.width(12.dp))

@@ -5,6 +5,7 @@ data class DescripcionDispositivo(
     val nombre: String,
     val categoria: String,
     val estado: String,
-    val fechaRegistro: String,
+    val imagenUrl: String?,
+    val fechaCreacion: String,
     val historial: List<String>
 )

@@ -3,8 +3,9 @@ package com.williamsel.labkeep.features.descripciondispositivo.data.datasource.m
 data class DescripcionDispositivoDto(
     val id: Int,
     val nombre: String,
-    val categoria: String,
+    val categoriaId: Int?,
+    val categoriaNombre: String?,
     val estado: String,
-    val fechaRegistro: String,
-    val historial: List<String>
+    val imagenUrl: String?,
+    val fechaCreacion: List<Int>?
 )

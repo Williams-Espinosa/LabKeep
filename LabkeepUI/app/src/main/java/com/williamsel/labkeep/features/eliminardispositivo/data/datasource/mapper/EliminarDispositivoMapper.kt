@@ -6,6 +6,7 @@ import com.williamsel.labkeep.features.eliminardispositivo.domain.entities.Elimi
 fun EliminarDispositivoDto.toDomain() = EliminarDispositivo(
     id = id,
     nombre = nombre,
-    categoria = categoria,
-    estado = estado
+    categoria = categoriaNombre ?: "Sin categoría",
+    estado = estado,
+    imagenUrl = imagenUrl
 )

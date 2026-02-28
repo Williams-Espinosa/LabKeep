@@ -5,14 +5,20 @@ import com.williamsel.labkeep.features.editardispositivo.domain.entities.EditarD
 
 fun EditarDispositivoDto.toDomain() = EditarDispositivo(
     id = id,
-    nombre = nombre,
-    categoria = categoria,
-    estado = estado
+    nombre = nombre ?: "Sin nombre",
+    categoria = categoriaNombre ?: "Sin categoría",
+    categoriaId = categoriaId ?: 0,
+    estado = estado ?: "Sin estado",
+    imagenUrl = imagenUrl,
+    fechaCreacion = fechaCreacion?.joinToString("/") ?: "Sin fecha"
 )
 
 fun EditarDispositivo.toDto() = EditarDispositivoDto(
     id = id,
     nombre = nombre,
-    categoria = categoria,
-    estado = estado
+    categoriaId = categoriaId,
+    categoriaNombre = categoria,
+    estado = estado,
+    imagenUrl = imagenUrl,
+    fechaCreacion = null
 )

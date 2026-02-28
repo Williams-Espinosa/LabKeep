@@ -21,6 +21,24 @@ class EditarDispositivoViewModel @Inject constructor(
     private val _uiState = MutableStateFlow(EditarDispositivoUIState())
     val uiState: StateFlow<EditarDispositivoUIState> = _uiState.asStateFlow()
 
+    init {
+        cargarCategorias()
+    }
+
+    private fun cargarCategorias() {
+        viewModelScope.launch {
+            _uiState.update { it.copy(isLoadingCategorias = true) }
+            useCase.getCategorias().fold(
+                onSuccess = { lista ->
+                    _uiState.update { it.copy(isLoadingCategorias = false, categorias = lista) }
+                },
+                onFailure = { e ->
+                    _uiState.update { it.copy(isLoadingCategorias = false, error = e.message) }
+                }
+            )
+        }
+    }
+
     fun cargarDispositivo(id: Int) {
         viewModelScope.launch {
             _uiState.update { it.copy(isLoading = true, error = null) }
@@ -32,7 +50,10 @@ class EditarDispositivoViewModel @Inject constructor(
                             id = dispositivo.id,
                             nombre = dispositivo.nombre,
                             categoria = dispositivo.categoria,
-                            estado = dispositivo.estado
+                            categoriaId = dispositivo.categoriaId,
+                            estado = dispositivo.estado,
+                            imagenUrl = dispositivo.imagenUrl,
+                            fechaCreacion = dispositivo.fechaCreacion
                         )
                     }
                 },
@@ -47,13 +68,13 @@ class EditarDispositivoViewModel @Inject constructor(
         _uiState.update { it.copy(nombre = value) }
     }
 
-    fun onCategoriaChange(value: String) {
-        _uiState.update { it.copy(categoria = value) }
+    fun onCategoriaChange(id: Int, nombre: String) {
+        _uiState.update { it.copy(categoriaId = id, categoria = nombre) }
     }
 
     fun guardarCambios() {
         val state = _uiState.value
-        if (state.nombre.isBlank() || state.categoria.isBlank()) {
+        if (state.nombre.isBlank() || state.categoriaId == 0) {
             _uiState.update { it.copy(error = "Completa todos los campos") }
             return
         }
@@ -64,7 +85,10 @@ class EditarDispositivoViewModel @Inject constructor(
                     id = state.id,
                     nombre = state.nombre,
                     categoria = state.categoria,
-                    estado = state.estado
+                    categoriaId = state.categoriaId,
+                    estado = state.estado,
+                    imagenUrl = state.imagenUrl,
+                    fechaCreacion = state.fechaCreacion
                 )
             ).fold(
                 onSuccess = {
