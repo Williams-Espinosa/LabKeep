@@ -1,0 +1,496 @@
+openapi: "3.0.3"
+info:
+  title: LabKeep API
+  description: |
+    API REST para gestión de dispositivos de laboratorio.
+    Permite administrar usuarios, categorías, dispositivos y préstamos.
+  version: "1.0.0"
+  contact:
+    name: LabKeep Team
+
+servers:
+  - url: http://localhost:8080
+    description: Servidor local de desarrollo
+
+tags:
+  - name: Usuarios
+    description: Registro e inicio de sesión
+  - name: Categorías
+    description: Gestión de categorías de dispositivos
+  - name: Dispositivos
+    description: Gestión de dispositivos del laboratorio
+  - name: Préstamos
+    description: Control de préstamos y devoluciones
+
+paths:
+
+  # ─── Usuarios ──────────────────────────────────────────────────────────────
+  /usuarios/registro:
+    post:
+      tags: [Usuarios]
+      summary: Registrar usuario
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegistrarUsuarioRequest'
+      responses:
+        "201":
+          description: Usuario registrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MensajeResponse'
+        "400":
+          $ref: '#/components/responses/BadRequest'
+        "409":
+          $ref: '#/components/responses/Conflict'
+
+  /usuarios/login:
+    post:
+      tags: [Usuarios]
+      summary: Iniciar sesión
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+      responses:
+        "200":
+          description: Login exitoso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LoginResponse'
+        "401":
+          $ref: '#/components/responses/Unauthorized'
+
+  # ─── Categorías ────────────────────────────────────────────────────────────
+  /categorias:
+    get:
+      tags: [Categorías]
+      summary: Listar categorías
+      responses:
+        "200":
+          description: Lista de categorías
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CategoriaResponse'
+    post:
+      tags: [Categorías]
+      summary: Crear categoría
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CategoriaRequest'
+      responses:
+        "201":
+          description: Categoría creada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MensajeResponse'
+
+  /categorias/{id}:
+    parameters:
+      - $ref: '#/components/parameters/Id'
+    get:
+      tags: [Categorías]
+      summary: Obtener categoría por ID
+      responses:
+        "200":
+          description: Categoría encontrada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CategoriaResponse'
+        "404":
+          $ref: '#/components/responses/NotFound'
+    put:
+      tags: [Categorías]
+      summary: Actualizar categoría
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CategoriaRequest'
+      responses:
+        "200":
+          description: Actualizada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MensajeResponse'
+        "404":
+          $ref: '#/components/responses/NotFound'
+    delete:
+      tags: [Categorías]
+      summary: Eliminar categoría
+      responses:
+        "200":
+          description: Eliminada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MensajeResponse'
+        "404":
+          $ref: '#/components/responses/NotFound'
+
+  # ─── Dispositivos ──────────────────────────────────────────────────────────
+  /dispositivos:
+    get:
+      tags: [Dispositivos]
+      summary: Listar dispositivos
+      parameters:
+        - name: q
+          in: query
+          description: Búsqueda por nombre o categoría
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Lista de dispositivos
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DispositivoResponse'
+    post:
+      tags: [Dispositivos]
+      summary: Crear dispositivo (con imagen opcional)
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [nombre, categoria_id]
+              properties:
+                nombre:
+                  type: string
+                categoria_id:
+                  type: integer
+                imagen:
+                  type: string
+                  format: binary
+      responses:
+        "201":
+          description: Dispositivo creado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DispositivoResponse'
+
+  /dispositivos/{id}:
+    parameters:
+      - $ref: '#/components/parameters/Id'
+    get:
+      tags: [Dispositivos]
+      summary: Obtener dispositivo por ID
+      responses:
+        "200":
+          description: Dispositivo encontrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DispositivoResponse'
+        "404":
+          $ref: '#/components/responses/NotFound'
+    put:
+      tags: [Dispositivos]
+      summary: Actualizar dispositivo
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ActualizarDispositivoRequest'
+      responses:
+        "200":
+          description: Actualizado
+    delete:
+      tags: [Dispositivos]
+      summary: Eliminar dispositivo
+      responses:
+        "200":
+          description: Eliminado
+
+  /dispositivos/{id}/imagen:
+    parameters:
+      - $ref: '#/components/parameters/Id'
+    put:
+      tags: [Dispositivos]
+      summary: Actualizar imagen del dispositivo
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [imagen]
+              properties:
+                imagen:
+                  type: string
+                  format: binary
+      responses:
+        "200":
+          description: Imagen actualizada
+
+  /dispositivos/{id}/estado:
+    parameters:
+      - $ref: '#/components/parameters/Id'
+    patch:
+      tags: [Dispositivos]
+      summary: Cambiar estado del dispositivo
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CambiarEstadoRequest'
+      responses:
+        "200":
+          description: Estado actualizado
+
+  # ─── Préstamos ─────────────────────────────────────────────────────────────
+  /prestamos:
+    get:
+      tags: [Préstamos]
+      summary: Listar todos los préstamos
+      responses:
+        "200":
+          description: Lista de préstamos
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PrestamoResponse'
+
+  /prestamos/dispositivo/{dispositivoId}:
+    get:
+      tags: [Préstamos]
+      summary: Historial de préstamos por dispositivo
+      parameters:
+        - name: dispositivoId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Historial
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PrestamoResponse'
+
+  /prestamos/prestar:
+    post:
+      tags: [Préstamos]
+      summary: Registrar préstamo
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PrestarRequest'
+      responses:
+        "201":
+          description: Préstamo registrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IdResponse'
+        "409":
+          $ref: '#/components/responses/Conflict'
+
+  /prestamos/devolver/{dispositivoId}:
+    put:
+      tags: [Préstamos]
+      summary: Registrar devolución
+      parameters:
+        - name: dispositivoId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Devolución registrada
+        "409":
+          $ref: '#/components/responses/Conflict'
+
+# ─── Componentes ─────────────────────────────────────────────────────────────
+components:
+  parameters:
+    Id:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: integer
+
+  responses:
+    NotFound:
+      description: Recurso no encontrado
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    BadRequest:
+      description: Solicitud inválida
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    Conflict:
+      description: Conflicto con el estado actual
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    Unauthorized:
+      description: No autorizado
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+
+  schemas:
+    MensajeResponse:
+      type: object
+      properties:
+        mensaje:
+          type: string
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+    IdResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+        mensaje:
+          type: string
+
+    RegistrarUsuarioRequest:
+      type: object
+      required: [correo, contrasena]
+      properties:
+        correo:
+          type: string
+          format: email
+        contrasena:
+          type: string
+          minLength: 6
+    LoginRequest:
+      type: object
+      required: [correo, contrasena]
+      properties:
+        correo:
+          type: string
+        contrasena:
+          type: string
+    LoginResponse:
+      type: object
+      properties:
+        mensaje:
+          type: string
+        usuarioId:
+          type: integer
+        correo:
+          type: string
+
+    CategoriaRequest:
+      type: object
+      required: [nombre]
+      properties:
+        nombre:
+          type: string
+    CategoriaResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+        nombre:
+          type: string
+
+    DispositivoResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+        nombre:
+          type: string
+        categoriaId:
+          type: integer
+        categoriaNombre:
+          type: string
+        estado:
+          type: string
+          enum: [disponible, prestado]
+        imagenUrl:
+          type: string
+          nullable: true
+        fechaCreacion:
+          type: string
+          nullable: true
+    ActualizarDispositivoRequest:
+      type: object
+      required: [nombre, categoriaId, estado]
+      properties:
+        nombre:
+          type: string
+        categoriaId:
+          type: integer
+        estado:
+          type: string
+    CambiarEstadoRequest:
+      type: object
+      required: [estado]
+      properties:
+        estado:
+          type: string
+          enum: [disponible, prestado]
+
+    PrestamoResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+        dispositivoId:
+          type: integer
+        dispositivoNombre:
+          type: string
+          nullable: true
+        usuarioId:
+          type: integer
+        usuarioCorreo:
+          type: string
+          nullable: true
+        fechaPrestamo:
+          type: string
+          nullable: true
+        fechaDevolucion:
+          type: string
+          nullable: true
+    PrestarRequest:
+      type: object
+      required: [dispositivoId, usuarioId]
+      properties:
+        dispositivoId:
+          type: integer
+        usuarioId:
+          type: integer
