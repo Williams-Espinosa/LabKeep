@@ -310,5 +310,5 @@ private const val BASE_URL = "http://TU_IP:7001/"
 
 Este proyecto es de uso académico/personal.
 ---
-> 💻 *"Codifica el futuro, crea el presente"*  
+> 💻 *"Crea el presente, codifica el futuro."*  
 > Desarrollado por **Williams-Espinosa** © 2026 — Todos los derechos reservados.
