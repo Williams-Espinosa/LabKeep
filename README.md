@@ -305,10 +305,19 @@ private const val BASE_URL = "http://TU_IP:7001/"
 > ⚠️ Si pruebas en emulador usa `10.0.2.2:7001`. Si usas dispositivo físico, usa la IP local de tu máquina. ⚠️
 
 ---
-
 ## 📄 Licencia
 
-Este proyecto es de uso académico/personal.
+![Licencia: Privada](https://img.shields.io/badge/Licencia-No_Comercial-red?style=for-the-badge)
 ---
-> 💻 *"Crea el presente, codifica el futuro."*  
-> Desarrollado por **Williams-Espinosa** © 2026 — Todos los derechos reservados.
+
+## Propiedad Intelectual
+
+Todo el contenido de este repositorio, incluyendo el código fuente, diseño gráfico, está protegido por las leyes de propiedad intelectual.
+
+* **Uso permitido:** Consulta, aprendizaje y exhibición personal.
+* **Prohibiciones:** Se prohíbe estrictamente la copia parcial o total para uso comercial, la reventa del software.
+
+> ###  *"Crea el presente, codifica el futuro."*
+> © 2026 **Williams-Espinosa**. Todos los derechos reservados.
+
+---
